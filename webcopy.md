@@ -19,24 +19,65 @@ We have Bigger Pocket cash home buyers waiting to pay Cash, no Banks, Realtors o
 We buy As Is! No need of repairs, stress free and very easy.
 We are Fast. Traditional way of selling homes takes too long when you need cash fast.
 
-### HOW IT WORKS
-1. Give us a call at 972-503-6617. <br/> 
-All we need is a little information about the house and we can give you a ballpark offer over the phone. Tell us about your property.
+## HOW IT WORKS
+Join thousands of homeowners who have experienced our simple and easy to sell model.
 
-2. If your property meets criteria, we’ll make you an offer with no obligation.<br/>
-Pick a closing date that works for you. <br/ >
-We can even rent the house back to you if you need more time to move.
+<button>Step No. 1</button>
+<dl>
+    <dt>Tell us about your home</dt>
+    <dd>Give us a call at 972-503-6617. 
+    Simply provide us with your address and brief details about your home's upgrades and current condition. Pictures are optional.</dd>
+</dl>
+<br />
 
-3. Get your Cash quick in as little as 10 days or less.<br />
-As soon as you close you’ll receive your cash.<br />
-We can close most home purchases in as little as 7 days.
+<button>Step No. 2</button>
+<dt>We will visit your home</dt>
+<dd>We evaluate the factors that make your home special. Our review takes about 24 hours. If your property meets criteria, we’ll make you an offer with no obligation.</dd>
+<br />
 
-### WHY CASH AND NOT TRADITIONAL
-1. INSTANT CASH OFFER
-2. NO FEES : COMMISSIONS, CLOSING COST, INSPECTION, APPRAISAL
-3. NO REPAIRS: We buy property as - is
+<button>Step No. 3</button>
+<dt>Review & select your option</dt>
+<dd> When do you think your flexible closing date might be? Will you need an Extended Stay after close?Pick a closing date that works for you.</dd>
+<br />
 
-### We Buy Houses for Cash in Dallas in These Areas
-We buy houses all over Dallas and North Texas. Here are just some of the houses we’ve bought for cash in Dallas:
+<button>Step No. 4</button><br />
+<dt>Close the deal & relax</dt>
+<dd> At closing, we pay the agreed upon price and buy your home! You're able to move freely to life's next chapter.</dd>
+<br />
 
-## Contact
+<button>FINAL STEP</button>
+<dt>Sign all documents online</dt>
+<dd> We will send you the purchase contract and if you approve, simply sign online and we're under contract!</dd>
+
+---
+
+
+
+## Want To Sell Your Home At A Higher Price?
+
+<button>REQUEST A FREE OFFER</button>
+
+---
+<!-- Footer Section -->
+
+[![Konectpal Investments Logo](./img/logo.png)](https://github.com/fredsiika/konectpal/img/logo.png)
+
+Trust our property investors to buy your house at a competitive price. Enjoy a seamless process, free from realtors, endless negotiations and last-minute cancelations.
+
+---
+
+| SERVICES          |       | COMPANY   |
+| -------------     |:------| -----     |
+| How It Works      |       | About Us  |
+| Benefits          |       | Investors |
+| Sell Your House   |       | Blog      |
+
+---
+
+Copyright © 2020 konectpalinvest.com | All Rights Reserved
+
+- Facebook Icon
+- Twitter Icon
+- Instagram Icon
+- LinkedIn Icon
+
