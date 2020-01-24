@@ -1,7 +1,9 @@
 <!-- Head section for medidata -->
+<!--
 <head>
     <title>WE BUY HOUSES IN DALLAS-FT WORTH!</title>
 </head>
+-->
 
 <!-- Body Section -->
 
