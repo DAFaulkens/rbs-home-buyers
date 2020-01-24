@@ -78,7 +78,7 @@ of all kinds and sizes — nationwide.
     <dd>Expect a conveniently scheduled walk-through your home, so we can see for ourselves what kind of property we’re dealing with. Don’t worry, we’ll never ask you to make upgrades or repairs, inside or outside your home.</dd>
     <br/>
     <dt>3. GET AN OFFER</dt>
-    <dd>Now it’s your turn to make an informed decision. We Buy House will extend a competitive cash offer for your property. Don’t worry about legal paperwork, third-party approvals or closing costs, we take care of everything for you.</dd>
+    <dd>Now it’s your turn to make an informed decision. Konectpal Investments will extend a competitive cash offer for your property. Don’t worry about legal paperwork, third-party approvals or closing costs, we take care of everything for you.</dd>
     <br/>
 </dl>
 
