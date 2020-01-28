@@ -12,7 +12,7 @@
 No agent commissions. All Cash. <br /> 
 Just submit your address below to get an irresistible cash offer.**
 
-[![Request A Free Offer](./img/email-form0.png)](https://github.com/fredsiika/konectpal/img/email-form0.png)
+[![Request A Free Offer](./img/email-form0.png)](https://raw.githubusercontent.com/fredsiika/konectpal/master/img/email-form0.png)
 
 ---
 
