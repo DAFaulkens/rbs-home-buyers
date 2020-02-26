@@ -5,39 +5,39 @@
 body {
     padding-bottom: 40px;
     color: #5a5a5a;
-  }
+}
   
   
   /* CUSTOMIZE THE NAVBAR
   -------------------------------------------------- */
   
   /* Special class on .container surrounding .navbar, used for positioning it into place. */
-  .navbar-wrapper {
+.navbar-wrapper {
     position: absolute;
     top: 0;
     right: 0;
     left: 0;
     z-index: 20;
-  }
+}
   
-  /* Flip around the padding for proper display in narrow viewports */
-  .navbar-wrapper > .container {
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
     padding-right: 0;
     padding-left: 0;
-  }
-  .navbar-wrapper .navbar {
+}
+.navbar-wrapper .navbar {
     padding-right: 15px;
     padding-left: 15px;
-  }
-  .navbar-wrapper .navbar .container {
+}
+.navbar-wrapper .navbar .container {
     width: auto;
-  }
+}
   
   
-  /* CUSTOMIZE THE CAROUSEL
-  -------------------------------------------------- */
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
   
-  /* Carousel base class */
+/* Carousel base class */
   .carousel {
     height: 500px;
     margin-bottom: 60px;
@@ -127,4 +127,5 @@ body {
       margin-top: 120px;
     }
   }
+}
   

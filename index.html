@@ -1,9 +1,10 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Required meta tahs -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
@@ -12,12 +13,16 @@
     <title>Konectpal Investments</title>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
-    <link href="carousel.css" rel="stylesheet">
-    <link href="jumbotron.css" rel="stylesheet">
+    <!-- CSS Global Compulsory --> 
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500">
+
+    <link href="styles.css" rel="stylesheet">
+    <!-- <link href="cover.css" rel="stylesheet"> -->
+    <!-- <link href="carousel.css" rel="stylesheet"> -->
+    <!-- <link href="jumbotron.css" rel="stylesheet"> -->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,19 +35,27 @@
     <div class="container">
       <div class="header clearfix">
         <!-- Navbar Section -->
-        <nav class="navbar navbar-inverse navbar-fixed-top">
+        <nav class="navbar navbar-fixed-top navbar-inverse">
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="d-none d-sm-inline-block">Menu</span>
+              <span id="hamburgerTrigger" class="u-hamburger__box ml-3">
+                <span class="u-hamburger__inner">
+                  <span class="navbar-toggler-icon  "></span>
+                </span>
+              </span>
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Konectpal</a>
+            <a class="navbar-brand" href="https://konectpalinvest.com">Konectpal</a>
             
+            
+
           </div>
           <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav masthead-nav fixed-right">
+            <ul class="nav .justify-content-end">
               <li role="presentation" class="active"><a href="#">Home</a></li>
               <li role="presentation"><a href="#">How It Works</a></li>
               <li role="presentation"><a href="#">Get Cash Offer</a></li>
@@ -53,16 +66,27 @@
       </div>
 
       <!-- Jumbotron Section -->
-      <div class="jumbotron-fluid">
+      <div class="jumbotron">
         <h1>Get Cash For Your House.</h1>
           <p class="lead">We buy houses for cash - we're home buyers who will buy your house "AS IS" and close on your timeline. You won’t have to clean, paint or fix a thing. Don’t waste any more time or money.</p>
-          <form class="navbar-form">
+          <!-- Email Form -->
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="text" placeholder="Email" aria-label="Email">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Get a Cash Offer</button>
+          </form>
+          <a class="text-gray ml-3" href="https://htmlstream.com/preview/space-v1.6.1/html/home/classic-business.html">
+            <small>
+              <i class="bootstrap-themes-icon-close"></i>
+            </small>
+          </a>
+          <!-- /End Email form -->
+          <!-- <form class="navbar-form">
             <div class="form-group">
               <input type="text" placeholder="Email" class="form-control">
             </div>
-            <!-- <p><a class="btn btn-lg btn-success" href="#" role="button">Get a Cash Offer</a></p> -->
+            <p><a class="btn btn-lg btn-success" href="#" role="button">Get a Cash Offer</a></p>
             <button type="submit" class="btn btn-large btn-success" href="#" role="button">Get a Cash Offer</button>
-          </form>
+          </form> -->
       </div> <!-- /End of jumbotron -->
 
       <!-- Marketing messaging and featurettes
@@ -174,10 +198,11 @@
       </footer>
     </div>
     <!-- /end of container -->
-    
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
 </html>
