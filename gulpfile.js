@@ -181,7 +181,7 @@ function minIMG() {
     .src('./assets/img/**/*')
     .pipe(cache(imagemin([
       imagemin.gifsicle({interlaced: true}),
-      imagemin.jpegtran({progressive: true}),
+      imagemin.mozjpeg({progressive: true}),
       imageminJpegRecompress({
         loops: 5,
         min: 65,
@@ -190,7 +190,7 @@ function minIMG() {
       }),
       imagemin.svgo(),
       imagemin.optipng({optimizationLevel: 3}),
-      pngquant({quality: '65-70', speed: 5})
+      pngquant({quality: [0.3, 0.5], speed: 5})
     ],{
       verbose: true
     })))
