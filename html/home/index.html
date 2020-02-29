@@ -36,7 +36,7 @@
   </a>
   <!-- End Skippy -->
 
-  <!-- ========== HEADER ========== -->
+  <!-- ========== HEADER & Navbar ========== -->
   <header id="header" class="u-header u-header--bg-transparent u-header--white-nav-links u-header--sticky-top-lg">
     <div class="u-header__section">
       <div id="logoAndNav" class="container">
@@ -318,7 +318,7 @@
       </div>
     </div>
   </header>
-  <!-- ========== END HEADER ========== -->
+  <!-- ========== END HEADER & Navbar ========== -->
 
   <!-- ========== MAIN CONTENT ========== -->
   <main id="content">
@@ -329,16 +329,10 @@
             <div class="row justify-content-lg-between align-items-md-center">
               <!-- Heading and description -->
               <div class="col-md-6 col-lg-5 mb-9 mb-md-0">
-                <h2 class="display-4 font-size-48--md-down mb-3">Get Cash For Your House.</h2>
+                <h2 class="display-4 text-white font-size-48--md-down mb-3">Sell your home with certainty, speed, and transparency.</h2>
                 <div class="mb-5">
-                  <p class="lead mb-0 text-white-70 text-lh-sm">We buy houses for cash - we're home buyers who will buy your house "AS IS" and close on your timeline. You won’t have to clean, paint or fix a thing. Don’t waste any more time or money.</p>
+                  <p class="lead mb-0 text-white-70 text-lh-sm">We are improving the process of buying and selling properties by working directly with homeowners.<br /><strong class="text-light">No Realtors. No commissions.</strong><br />Let us buy your home—close on your terms and save time and money.</p>
                 </div>
-                <!-- Fancybox -->
-                <a class="js-fancybox btn btn-outline-purple btn-wide" href="javascript:;" data-src="//vimeo.com/167434033" data-speed="700" data-animate-in="zoomIn" data-animate-out="zoomOut" data-caption="Space - Responsive Website Template">
-                  <i class="fa fa-play font-size-13 mr-1"></i>
-                  Watch Video
-                </a>
-                <!-- End Fancybox -->
                 <!-- Divider -->
                 <div class="w-25">
                   <hr class="my-6">
@@ -355,8 +349,42 @@
                     <div class="card shadow-sm mb-4">
                       <div class="card-body p-5">
                         <h2 class="h6 text-muted font-weight-medium text-uppercase mb-3">Get started</h2>
-    
-                        <!-- Input -->
+                        <p class="h6 lead mb-0 text-black-70 text-lh-sm">Where are you in the selling process?</p>
+                        <!-- Radio checkboxes -->
+                        <div class="form-check mb-3">
+                          <div class="form-check h6 text-muted font-weight-bold form-check">
+                            <input class="form-check-input" type="radio" name="signupRadios" id="signupRadios1" value="option1" />
+                            <label class="form-check-label" for="signupRadios1">Exploring Options</label>
+                          </div>
+                          <div class="form-check h6 text-muted font-weight-bold form-check">
+                            <input class="form-check-input" type="radio" name="signupRadios" id="signupRadios2" value="option2" />
+                            <label class="form-check-label" for="signupRadios2">House Listed</label>
+                          </div>
+                          <div class="form-check h6 text-muted font-weight-bold form-check">
+                            <input class="form-check-input" type="radio" name="signupRadios" id="signupRadios3" value="option3" />
+                            <label class="form-check-label" for="signupRadios3">Recieved Offer</label>
+                          </div>
+                          <div class="form-check h6 text-muted font-weight-bold form-check">
+                            <input class="form-check-input" type="radio" name="signupRadios" id="signupRadios4" value="option4" />
+                            <label class="form-check-label" for="signupRadios4">Other</label>
+                          </div>
+                        </div>
+                        <!-- End Radio checkboxes -->
+
+                        <!-- First Name Input -->
+                        <div class="js-form-message mb-3">
+                          <div class="js-focus-state input-group input-group form">
+                            <div class="input-group-prepend form__prepend">
+                              <span class="input-group-text form__text">
+                                <i class="fa fa-user form__text-inner"></i>
+                              </span>
+                            </div>
+                            <input type="text" class="form-control form__input" name="signupFirstName" required="" placeholder="First Name" aria-label="First Name">
+                          </div>
+                        </div>
+                        <!-- End First Name Input -->
+
+                        <!-- Email Input -->
                         <div class="js-form-message mb-3">
                           <div class="js-focus-state input-group input-group form">
                             <div class="input-group-prepend form__prepend">
@@ -364,25 +392,12 @@
                                 <i class="fa fa-envelope form__text-inner"></i>
                               </span>
                             </div>
-                            <input type="email" class="form-control form__input" name="signupEmail" required="" placeholder="Enter your email address" aria-label="Enter your email address">
+                            <input type="email" class="form-control form__input" name="signupEmail" required="" placeholder="Enter your email address" aria-label="Enter your email address" data-msg="Please enter a valid email address." data-error-class="u-has-error" data-success-class="u-has-success">
                           </div>
                         </div>
-                        <!-- End Input -->
-    
-                        <!-- Input -->
-                        <div class="js-form-message mb-3">
-                          <div class="js-focus-state input-group input-group form">
-                            <div class="input-group-prepend form__prepend">
-                              <span class="input-group-text form__text">
-                                <i class="fa fa-lock form__text-inner"></i>
-                              </span>
-                            </div>
-                            <input type="password" class="form-control form__input" name="signupPassword" required="" placeholder="Create your password" aria-label="Create your password">
-                          </div>
-                        </div>
-                        <!-- End Input -->
-    
-                        <!-- Input -->
+                        <!-- End Email Input -->
+
+                        <!-- Phone Number Input -->
                         <div class="js-form-message mb-3">
                           <div class="js-focus-state input-group input-group form">
                             <div class="input-group-prepend form__prepend">
@@ -393,38 +408,11 @@
                             <input type="text" class="form-control form__input" name="signupPhoneNumber" required="" placeholder="Enter mobile number" aria-label="Enter mobile number">
                           </div>
                         </div>
-                        <!-- End Input -->
-    
-                        <button type="submit" class="btn btn-block btn-primary">Sign Up</button>
-                      </div>
-    
-                      <div class="card-footer p-5">
-                        <h3 class="h6 text-muted font-weight-medium text-uppercase mb-3">Sign Up with</h3>
-    
-                        <div class="row mx-gutters-1">
-                          <div class="col-6">
-                            <button type="submit" class="btn btn-block btn-sm btn-google">
-                              <i class="fab fa-google mr-2"></i>
-                              Google
-                            </button>
-                          </div>
-                          <div class="col-6">
-                            <button type="submit" class="btn btn-block btn-sm btn-facebook">
-                              <i class="fab fa-facebook-f mr-2"></i>
-                              Facebook
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-    
-                    <div class="card shadow-sm">
-                      <div class="card-body p-5">
-                        <p class="mb-0">
-                          Or continue your application
-                          <a class="js-animation-link" href="javascript:;" data-target="#heroSignin" data-link-group="idHeroSignupForm">Signin
-                          </a>
-                        </p>
+                        <!-- End Phone Number Input -->
+                        <!-- End Form Disclaimer -->
+                        <small class="form-text text-muted">By signing up, I agree to the <a href="../pages/terms.html">Terms of Service </a>and <a href="../pages/privacy.html">Privacy Policy </a>and expressly agree to receive Konectpal Invest marketing emails and texts. Message and Data Rates may apply.</small>
+                        <hr class="my-4">
+                        <button type="submit" class="btn btn-block btn-primary">Get a Cash Offer</button>
                       </div>
                     </div>
                   </div>
@@ -550,16 +538,30 @@
       <!-- Section Divider -->
       <hr class="my-0">
 
+      <!-- Challenges Section -->
+      <div class="container space-2 space-3--lg">
+        <div class="w-md-80 w-lg-60 text-center mx-md-auto mb-9">
+          <span class="u-label u-label--sm u-label--purple mb-3">Challenges</span>
+          <h2 class="h3">The traditional process of selling a property is complicated.<br />Here's why.</h2>
+          <p>Most people don't understand the process of selling their property without a Realtor. The burden of organizing open houses, pricing analysis, and contractual agreements can be overwhelming.</p>
+        </div>
+      </div>
+      <!-- End Challenges Section -->
+
+      <!-- Divider -->
+      <hr class="my-0">
+
       <!-- How it works -->
       <div class="space-2 space-3--lg gradient-overlay-quarter-light-v1">
         <div class="container">
           <!-- Title -->
           <div class="w-md-80 w-lg-60 mx-md-auto text-md-center mb-6">
-            <h6 class="text-uppercase text-gray-700 font-weight-medium letter-spacing-0_06 mb-3">How it works</h6>
-            <h2 class="text-lh-xs mb-0">Just in three simple steps</h2>
+            <span class="u-label u-label--sm u-label--purple mb-3 text-center">The Process</span>
+            <h2 class="text-lh-xs mb-0">How it Works</h2>
+            <h6 class="text-uppercase text-gray-700 font-weight-medium letter-spacing-0_06 mb-3">In three simple steps.</h6>
           </div>
           <!-- End Title -->
-  
+
           <!-- Wizard -->
           <div class="js-wizard wizard" data-wizard-steps="#wizardSteps" data-wizard-content="#wizardContent">
             <!-- Wizard Steps -->
@@ -570,7 +572,7 @@
                     <div class="wizard-steps-num-inner">1</div>
                   </div>
                 </div>
-                <h5 class="wizard-steps-title d-none d-sm-block">Meet our agent</h5>
+                <h5 class="wizard-steps-title d-none d-sm-block">Meet your advisor</h5>
               </div>
   
               <div class="wizard-steps-item cursor-pointer" data-next-step="#selectStepTwo">
@@ -579,7 +581,7 @@
                     <div class="wizard-steps-num-inner">2</div>
                   </div>
                 </div>
-                <h5 class="wizard-steps-title d-none d-sm-block">Discuss with the owner</h5>
+                <h5 class="wizard-steps-title d-none d-sm-block">Visit Your Property</h5>
               </div>
   
               <div class="wizard-steps-item cursor-pointer" data-next-step="#selectStepThree">
@@ -588,7 +590,7 @@
                     <div class="wizard-steps-num-inner">3</div>
                   </div>
                 </div>
-                <h5 class="wizard-steps-title d-none d-sm-block">Make a deal</h5>
+                <h5 class="wizard-steps-title d-none d-sm-block">Make a Deal</h5>
               </div>
             </div>
             <!-- End Wizard Steps -->
@@ -601,8 +603,8 @@
                 </div>
   
                 <div class="col-md-6 pl-lg-9">
-                  <h2 class="text-lh-xs mb-4">Tell us about your dream<br class="d-none d-lg-inline-block"> property and let us do the magic</h2>
-                  <p class="mb-7">We're so passionate about to help you to find the best<br class="d-none d-lg-inline-block"> property to living. With our experience there is no doubt you'll<br class="d-none d-lg-inline-block"> regret our service.</p>
+                  <h2 class="text-lh-xs mb-4">Tell us about your <br class="d-none d-lg-inline-block"> property and let us do the magic</h2>
+                  <p class="mb-7">Helping you sell your property is our top priority. <br class="d-none d-lg-inline-block">Meet either in person or via phone/video conference. We'll dial in the details such as pricing, and hatch a plan. <br class="d-none d-lg-inline-block">Understanding the task at hand and ironing out the wrinkles is key.</p>
                   <a class="btn btn-sm btn-primary mr-3" href="#">Get Started</a>
                   <a class="btn btn-sm btn-outline-primary border-1" href="javascript:;" data-next-step="#selectStepTwo">
                     Next Step
@@ -616,8 +618,8 @@
                 </div>
   
                 <div class="col-md-6 pl-lg-9">
-                  <h2 class="text-lh-xs mb-4">Discuss with the owner</h2>
-                  <p class="mb-7">We're so passionate about to help you to find the best<br class="d-none d-lg-inline-block"> property to living. With our experience there is no doubt you'll<br class="d-none d-lg-inline-block"> regret our service.</p>
+                  <h2 class="text-lh-xs mb-4">The devils in the details.</h2>
+                  <p class="mb-7">Our licensed experts will comb your home for a due diligence home evaluation. <br class="d-none d-lg-inline-block"> We leverage the diverse skillset of our advisors, partners and contractors. <br class="d-none d-lg-inline-block">A detailed due diligence report is what allows us to set realistic expectations</p>
                   <a class="btn btn-sm btn-primary mr-3" href="#">Get Started</a>
                   <a class="btn btn-sm btn-outline-primary border-1" href="javascript:;" data-next-step="#selectStepThree">
                     Next Step
@@ -631,8 +633,8 @@
                 </div>
   
                 <div class="col-md-6 pl-lg-9">
-                  <h2 class="text-lh-xs mb-4">Make a deal</h2>
-                  <p class="mb-7">We're so passionate about to help you to find the best<br class="d-none d-lg-inline-block"> property to living. With our experience there is no doubt you'll<br class="d-none d-lg-inline-block"> regret our service.</p>
+                  <h2 class="text-lh-xs mb-4">Let's make a deal</h2>
+                  <p class="mb-7">It's time to review offers. We help you pick the best offer and close the deal. <br class="d-none d-lg-inline-block">Voilà!</p>
                   <a class="btn btn-sm btn-primary mr-3" href="#">Get Started</a>
                 </div>
               </div>
@@ -644,6 +646,61 @@
       </div>
       <!-- End How it works -->
 
+      <!-- Benefits Extended -->
+      <div class="space-2 space-3-bottom--lg overflow-hidden">
+        <div class="container">
+          <div class="row no-gutters align-items-center">
+            <div class="col-lg-5 mb-5 mb-lg-0">
+              <h6 class="text-uppercase font-weight-medium letter-spacing-0_06 mb-3">Benefits</h6>
+              <h2 class="text-lh-xs mb-4">Things our customer love</h2>
+              <p class="mb-5">What makes us different from other competitor is that we have three main things that our customer really love about</p>
+  
+              <!-- Benefits List -->
+              <ul class="list-unstyled mb-7">
+                <li class="d-flex align-items-start mb-5">
+                  <div class="mt-2">
+                    <span class="u-icon u-icon--secondary u-icon--sm rounded-circle">
+                      <span class="u-icon__inner">1</span>
+                    </span>
+                  </div>
+                  <div class="ml-3">
+                    <p class="mb-0">The ability to match with and book an available home easily and quick</p>
+                  </div>
+                </li>
+  
+                <li class="d-flex align-items-start mb-5">
+                  <div class="mt-2">
+                    <span class="u-icon u-icon--secondary u-icon--sm rounded-circle">
+                      <span class="u-icon__inner">2</span>
+                    </span>
+                  </div>
+                  <div class="ml-3">
+                    <p class="mb-0">Our process is straightforward and uncomplicated and everything is only require less effort</p>
+                  </div>
+                </li>
+  
+                <li class="d-flex align-items-start mb-5">
+                  <div class="mt-2">
+                    <span class="u-icon u-icon--secondary u-icon--sm rounded-circle">
+                      <span class="u-icon__inner">3</span>
+                    </span>
+                  </div>
+                  <div class="ml-3">
+                    <p class="mb-0">Whenever you buy it you can sell it anytime with the best price </p>
+                  </div>
+                </li>
+              </ul>
+              <!-- End Benefits List -->
+            </div>
+            <div class="col-lg-6 offset-lg-1">
+              <div class="position-relative h-100 vw-lg-50">
+                <img class="img-fluid w-100 rounded rounded-lg-right-0" src="../../assets/img/demo/real-estate/benefits.jpg" alt="Image Description">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Benefits Extended -->
 
       <!-- Features Section -->
       <div class="container space-2 space-3--lg">
@@ -880,69 +937,7 @@
       </div>
       <!-- End Solutions -->
 
-      <!-- Benefits Extended -->
-      <div class="space-2 space-3-bottom--lg overflow-hidden">
-        <div class="container">
-          <div class="row no-gutters align-items-center">
-            <div class="col-lg-5 mb-5 mb-lg-0">
-              <h6 class="text-uppercase font-weight-medium letter-spacing-0_06 mb-3">Benefits</h6>
-              <h2 class="text-lh-xs mb-4">Things our customer love</h2>
-              <p class="mb-5">What makes us different from other competitor is that we have three main things that our customer really love about</p>
-  
-              <!-- Benefits List -->
-              <ul class="list-unstyled mb-7">
-                <li class="d-flex align-items-start mb-5">
-                  <div class="mt-2">
-                    <span class="u-icon u-icon--secondary u-icon--sm rounded-circle">
-                      <span class="u-icon__inner">1</span>
-                    </span>
-                  </div>
-                  <div class="ml-3">
-                    <p class="mb-0">The ability to match with and book an available home easily and quick</p>
-                  </div>
-                </li>
-  
-                <li class="d-flex align-items-start mb-5">
-                  <div class="mt-2">
-                    <span class="u-icon u-icon--secondary u-icon--sm rounded-circle">
-                      <span class="u-icon__inner">2</span>
-                    </span>
-                  </div>
-                  <div class="ml-3">
-                    <p class="mb-0">Our process is straightforward and uncomplicated and everything is only require less effort</p>
-                  </div>
-                </li>
-  
-                <li class="d-flex align-items-start mb-5">
-                  <div class="mt-2">
-                    <span class="u-icon u-icon--secondary u-icon--sm rounded-circle">
-                      <span class="u-icon__inner">3</span>
-                    </span>
-                  </div>
-                  <div class="ml-3">
-                    <p class="mb-0">Whenever you buy it you can sell it anytime with the best price </p>
-                  </div>
-                </li>
-              </ul>
-              <!-- End Benefits List -->
-  
-              <!-- Logos -->
-              <ul class="list-inline">
-                <li class="list-inline-item mr-6"><img src="../../assets/img/clients/google.png" alt="Image Description" width="94"></li>
-                <li class="list-inline-item mr-6"><img src="../../assets/img/clients/slack.png" alt="Image Description" width="97"></li>
-                <li class="list-inline-item"><img src="../../assets/img/clients/spotify.png" alt="Image Description" width="94"></li>
-              </ul>
-              <!-- End Logos -->
-            </div>
-            <div class="col-lg-6 offset-lg-1">
-              <div class="position-relative h-100 vw-lg-50">
-                <img class="img-fluid w-100 rounded rounded-lg-right-0" src="../../assets/img/demo/real-estate/benefits.jpg" alt="Image Description">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End Benefits Extended -->
+      
 
       <!-- About Us -->
       <div class="position-relative gradient-overlay-half-dark-v2 bg-img-hero" style="background-image: url(../../assets/img/1920x800/img7.jpg);">
@@ -1116,7 +1111,6 @@
   </main>
   <!-- ========== END MAIN CONTENT ========== -->
 
-
   <!-- ========== FOOTER ========== -->
   <footer class="bg-dark pt-9">
     <div class="container space-2">
@@ -1283,7 +1277,7 @@
   </footer>
   <!-- ========== END FOOTER ========== -->
 
-  <!-- Go to Top -->
+  <!-- Go to Top Icon -->
   <a class="js-go-to u-go-to" href="javascript:;"
     data-position='{"bottom": 15, "right": 15 }'
     data-type="fixed"
@@ -1293,7 +1287,7 @@
     data-hide-effect="slideOutDown">
     <i class="fa fa-arrow-up u-go-to__inner"></i>
   </a>
-  <!-- END Go to Top -->
+  <!-- END Go to Top Icon -->
 
   <!-- JS Global Compulsory -->
   <script src="../../assets/vendor/jquery/dist/jquery.min.js"></script>
