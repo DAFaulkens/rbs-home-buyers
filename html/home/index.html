@@ -23,7 +23,7 @@
         <link rel="stylesheet" href="../../assets/vendor/fancybox/jquery.fancybox.css">
         <link rel="stylesheet" href="../../assets/vendor/flatpickr/dist/flatpickr.min.css">
 
-        <!-- CSS Space Template -->
+        <!-- CSS Konectpal Template -->
         <link rel="stylesheet" href="../../assets/css/theme.css">
 </head>
 
@@ -41,10 +41,10 @@
     <div class="u-header__section">
       <div id="logoAndNav" class="container">
         <!-- Nav -->
-        <nav class="js-mega-menu navbar navbar-expand-lg u-header__navbar">
+        <nav id="navbarScroll" class="js-mega-menu navbar navbar-expand-lg u-header__navbar">
           <!-- Logo -->
           <div class="u-header__navbar-brand-wrapper">
-            <a class="navbar-brand u-header__navbar-brand" href="../../html/home/index.html" aria-label="Konectpal">
+            <a class="navbar-brand u-header__navbar-brand" href="index.html" aria-label="Konectpal">
               <img class="u-header__navbar-brand-default" src="../../assets/svg/logos/logo-white.svg" alt="Logo" style="width: 350px; max-width: 100%;">
               <img class="u-header__navbar-brand-on-scroll" src="../../assets/svg/logos/logo-short.svg" alt="Logo" style="width: 40px; max-width: 100%;">
               <img class="u-header__navbar-brand-mobile" src="../../assets/svg/logos/logo-short.svg" alt="Logo" style="width: 40px; max-width: 100%;">
@@ -73,243 +73,44 @@
           <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse py-0">
             <ul class="navbar-nav u-header__navbar-nav">
               <!-- Home -->
-              <li class="nav-item hs-has-sub-menu u-header__nav-item"
-                  data-event="hover"
-                  data-animation-in="fadeInUp"
-                  data-animation-out="fadeOut">
-                <a id="homeMegaMenu" class="nav-link u-header__nav-link" href="javascript:;"
-                   aria-haspopup="true"
-                   aria-expanded="false"
-                   aria-labelledby="homeSubMenu">
-                  Home
-                  <i class="fa fa-angle-down u-header__nav-link-icon"></i>
+              <li class="nav-item u-header__nav-item">
+                <a class="nav-link u-header__nav-link" href="#">
+                  We Buy Houses
                 </a>
-
-                <!-- Home - Submenu -->
-                <ul id="homeSubMenu" class="list-inline hs-sub-menu u-header__sub-menu mb-0" style="min-width: 220px;"
-                    aria-labelledby="homeMegaMenu">
-                  <!-- Classic -->
-                  <li class="dropdown-item hs-has-sub-menu">
-                    <a id="navLinkHomeClassic" class="nav-link u-header__sub-menu-nav-link" href="javascript:;"
-                       aria-haspopup="true"
-                       aria-expanded="false"
-                       aria-controls="navSubmenuHomeClassic">
-                      Classic
-                      <i class="fa fa-angle-right u-header__sub-menu-nav-link-icon"></i>
-                    </a>
-
-                    <!-- Submenu (level 2) -->
-                    <ul id="navSubmenuHomeClassic" class="hs-sub-menu list-unstyled u-header__sub-menu u-header__sub-menu-offset" style="min-width: 220px;"
-                        aria-labelledby="navLinkHomeClassic">
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="index.html">Default</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="classic-agency.html">Agency</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="classic-business.html">Business</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="classic-start-up.html">Start-Up</a>
-                      </li>
-                    </ul>
-                    <!-- End Submenu (level 2) -->
-                  </li>
-                  <!-- Classic -->
-
-                  <!-- Corporate -->
-                  <li class="dropdown-item hs-has-sub-menu">
-                    <a id="navLinkHomeCorporate" class="nav-link u-header__sub-menu-nav-link" href="javascript:;"
-                       aria-haspopup="true"
-                       aria-expanded="false"
-                       aria-controls="navSubmenuHomeCorporate">
-                      Corporate
-                      <i class="fa fa-angle-right u-header__sub-menu-nav-link-icon"></i>
-                    </a>
-
-                    <!-- Submenu (level 2) -->
-                    <ul id="navSubmenuHomeCorporate" class="hs-sub-menu list-unstyled u-header__sub-menu u-header__sub-menu-offset" style="min-width: 220px;"
-                        aria-labelledby="navLinkHomeCorporate">
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="corporate-agency.html">Agency</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="corporate-business.html">Business</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="corporate-start-up.html">Start-Up</a>
-                      </li>
-                    </ul>
-                    <!-- End Submenu (level 2) -->
-                  </li>
-                  <!-- Corporate -->
-
-                  <!-- Creative -->
-                  <li class="dropdown-item hs-has-sub-menu">
-                    <a id="navLinkHomeCreative" class="nav-link u-header__sub-menu-nav-link" href="javascript:;"
-                       aria-haspopup="true"
-                       aria-expanded="false"
-                       aria-controls="navSubmenuHomeCreative">
-                      Creative
-                      <i class="fa fa-angle-right u-header__sub-menu-nav-link-icon"></i>
-                    </a>
-
-                    <!-- Submenu (level 2) -->
-                    <ul id="navSubmenuHomeCreative" class="hs-sub-menu list-unstyled u-header__sub-menu u-header__sub-menu-offset" style="min-width: 220px;"
-                        aria-labelledby="navLinkHomeCreative">
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="creative-agency.html">Agency</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="creative-business.html">Business</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="creative-start-up.html">Start-Up</a>
-                      </li>
-                    </ul>
-                    <!-- End Submenu (level 2) -->
-                  </li>
-                  <!-- Creative -->
-
-                  <!-- Modern -->
-                  <li class="dropdown-item hs-has-sub-menu">
-                    <a id="navLinkHomeModern" class="nav-link u-header__sub-menu-nav-link" href="javascript:;"
-                       aria-haspopup="true"
-                       aria-expanded="false"
-                       aria-controls="navSubmenuHomeModern">
-                      Modern
-                      <i class="fa fa-angle-right u-header__sub-menu-nav-link-icon"></i>
-                    </a>
-
-                    <!-- Submenu (level 2) -->
-                    <ul id="navSubmenuHomeModern" class="hs-sub-menu list-unstyled u-header__sub-menu u-header__sub-menu-offset" style="min-width: 220px;"
-                        aria-labelledby="navLinkHomeModern">
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="modern-agency.html">Agency</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="modern-business.html">Business</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="modern-start-up.html">Start-Up</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="modern-digital.html">Digital</a>
-                      </li>
-                    </ul>
-                    <!-- End Submenu (level 2) -->
-                  </li>
-                  <!-- Modern -->
-
-                  <!-- App -->
-                  <li class="dropdown-item hs-has-sub-menu">
-                    <a id="navLinkHomeApp" class="nav-link u-header__sub-menu-nav-link" href="javascript:;"
-                       aria-haspopup="true"
-                       aria-expanded="false"
-                       aria-controls="navSubmenuHomeApp">
-                      App
-                      <i class="fa fa-angle-right u-header__sub-menu-nav-link-icon"></i>
-                    </a>
-
-                    <!-- Submenu (level 2) -->
-                    <ul id="navSubmenuHomeApp" class="hs-sub-menu list-unstyled u-header__sub-menu u-header__sub-menu-offset" style="min-width: 220px;"
-                        aria-labelledby="navLinkHomeApp">
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="app-agency.html">Agency</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="app-business.html">Business</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="app-start-up.html">Start-Up</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="app-digital.html">Digital</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="app-modern.html">Modern</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="app-minimal.html">Minimal</a>
-                      </li>
-                    </ul>
-                    <!-- End Submenu (level 2) -->
-                  </li>
-                  <!-- End App -->
-
-                  <li class="dropdown-divider"></li>
-
-                  <!-- Demos -->
-                  <li class="dropdown-item hs-has-sub-menu">
-                    <a id="navLinkHomeDemos" class="nav-link u-header__sub-menu-nav-link" href="javascript:;"
-                       aria-haspopup="true"
-                       aria-expanded="false"
-                       aria-controls="navSubmenuHomeDemos">
-                      Demos
-                      <i class="fa fa-angle-right u-header__sub-menu-nav-link-icon"></i>
-                    </a>
-
-                    <!-- Submenu (level 2) -->
-                    <ul id="navSubmenuHomeDemos" class="hs-sub-menu list-unstyled u-header__sub-menu u-header__sub-menu-offset" style="min-width: 220px;"
-                        aria-labelledby="navLinkHomeDemos">
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="job.html">Job <span class="badge badge-primary">New</span></a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="real-estate.html">Real Estate <span class="badge badge-primary">New</span></a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="hotel.html">Hotel <span class="badge badge-primary">New</span></a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="restaurant.html">Restaurant</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="event.html">Event</a>
-                      </li>
-                      <li class="dropdown-item u-header__sub-menu-list-item">
-                        <a class="nav-link u-header__sub-menu-nav-link" href="shipping.html">Shipping</a>
-                      </li>
-                    </ul>
-                    <!-- End Submenu (level 2) -->
-                  </li>
-                  <!-- End Demos -->
-                </ul>
-                <!-- End Home - Submenu -->
               </li>
               <!-- End Home -->
 
-              <!-- Pages -->
-              <li class="nav-item hs-has-mega-menu u-header__nav-item"
-                  data-event="hover"
-                  data-animation-in="fadeInUp"
-                  data-animation-out="fadeOut"
-                  data-position="right">
-                <a id="PagesMegaMenu" class="nav-link u-header__nav-link" href="javascript:;"
-                   aria-haspopup="true"
-                   aria-expanded="false">
-                  Pages
-                  <!-- <i class="fa fa-angle-down u-header__nav-link-icon"></i> -->
+              <!-- Challenges -->
+              <li class="nav-item hs-has-mega-menu u-header__nav-item">
+                <a class="nav-link u-header__nav-link" href="#challenges">
+                  Challenges
                 </a>
               </li>
-              <!-- End Pages -->
+              <!-- End Challenges -->
 
               <!-- How It Works -->
-              <li class="nav-item hs-has-sub-menu u-header__nav-item" data-event="hover" data-animation-in="fadeInUp" data-animation-out="fadeOut">
-                <a id="worksMegaMenu" class="nav-link u-header__nav-link" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="worksSubMenu">
+              <li class="nav-item u-header__nav-item">
+                <a class="nav-link u-header__nav-link" href="#">
                       How It Works
-                      <!-- <i class="fa fa-angle-down u-header__nav-link-icon"></i> -->
                 </a>   
               </li>
+              <!-- End How It Works  -->
 
-              <!-- Button -->
+              <!-- Solutions -->
+              <li class="nav-item u-header__nav-item">
+                <a class="nav-link u-header__nav-link" href="#solutions">
+                      Solutions
+                </a>   
+              </li>
+              <!-- End Solutions  -->
+
+              <!-- Button CTA -->
               <li class="nav-item u-header__nav-item-btn">
-                <a class="btn btn-sm btn-primary" href="#signinModal" data-toggle="modal">
-                  Sign in
+                <a class="btn btn-sm btn-outline-primary" href="#get-started" data-toggle="modal">
+                  Get Started
                 </a>
               </li>
-              <!-- End Button -->
+              <!-- End Button CTA -->
             </ul>
           </div>
           <!-- End Navigation -->
@@ -321,7 +122,7 @@
   <!-- ========== END HEADER & Navbar ========== -->
 
   <!-- ========== MAIN CONTENT ========== -->
-  <main id="content">
+  <main id="content" data-spy="scroll" data-target="#navbarScroll" data-offset="0">
   
       <!-- Hero Section -->
         <div class="gradient-overlay-dark-v1 bg-img-hero" style="background-image: url(../../assets/img/demo/real-estate/jumbotron.jpg);">
@@ -329,7 +130,7 @@
             <div class="row justify-content-lg-between align-items-md-center">
               <!-- Heading and description -->
               <div class="col-md-6 col-lg-5 mb-9 mb-md-0">
-                <h2 class="display-4 text-white font-size-48--md-down mb-3">Sell your home with certainty, speed, and transparency.</h2>
+                <h2 id="#" class="display-4 text-white font-size-48--md-down mb-3">Sell your home with certainty, speed, and transparency.</h2>
                 <div class="mb-5">
                   <p class="lead mb-0 text-white-70 text-lh-sm">We are improving the process of buying and selling properties by working directly with homeowners.<br /><strong class="text-light">No Realtors. No commissions.</strong><br />Let us buy your home—close on your terms and save time and money.</p>
                 </div>
@@ -416,116 +217,7 @@
                       </div>
                     </div>
                   </div>
-                  <!-- End Signup -->
-    
-                  <!-- Signin -->
-                  <div id="heroSignin" style="display: none; opacity: 0;" data-target-group="idHeroSignupForm">
-                    <div class="card shadow-sm mb-4">
-                      <div class="card-body p-5">
-                        <h2 class="h6 text-muted font-weight-medium text-uppercase mb-3">Login</h2>
-    
-                        <!-- Input -->
-                        <div class="js-form-message mb-3">
-                          <div class="js-focus-state input-group input-group form">
-                            <div class="input-group-prepend form__prepend">
-                              <span class="input-group-text form__text">
-                                <i class="fa fa-envelope form__text-inner"></i>
-                              </span>
-                            </div>
-                            <input type="email" class="form-control form__input" name="signinEmail" required="" placeholder="Enter your email address" aria-label="Enter your email address">
-                          </div>
-                        </div>
-                        <!-- End Input -->
-    
-                        <!-- Input -->
-                        <div class="js-form-message mb-1">
-                          <div class="js-focus-state input-group input-group form">
-                            <div class="input-group-prepend form__prepend">
-                              <span class="input-group-text form__text">
-                                <i class="fa fa-lock form__text-inner"></i>
-                              </span>
-                            </div>
-                            <input type="password" class="form-control form__input" name="signinPassword" required="" placeholder="Create your password" aria-label="Create your password">
-                          </div>
-                        </div>
-                        <!-- End Input -->
-    
-                        <!-- Recover Link -->
-                        <div class="d-flex justify-content-end mb-3">
-                          <a class="js-animation-link" href="javascript:;" data-target="#heroRecoverAccount" data-link-group="idHeroSignupForm">Forgot password?
-                          </a>
-                        </div>
-                        <!-- End Recover Link -->
-    
-                        <button type="submit" class="btn btn-block btn-primary">Sign In</button>
-                      </div>
-    
-                      <div class="card-footer p-5">
-                        <h3 class="h6 text-muted font-weight-medium text-uppercase mb-3">Sign In with</h3>
-    
-                        <div class="row mx-gutters-1">
-                          <div class="col-6">
-                            <button type="submit" class="btn btn-block btn-sm btn-google">
-                              <i class="fab fa-google mr-2"></i>
-                              Google
-                            </button>
-                          </div>
-                          <div class="col-6">
-                            <button type="submit" class="btn btn-block btn-sm btn-facebook">
-                              <i class="fab fa-facebook-f mr-2"></i>
-                              Facebook
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-    
-                    <div class="card shadow-sm">
-                      <div class="card-body p-5">
-                        <p class="mb-0">
-                          Or continue your application
-                          <a class="js-animation-link" href="javascript:;" data-target="#heroSignup" data-link-group="idHeroSignupForm">Signup
-                          </a>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- End Signin -->
-    
-                  <!-- Recover Account -->
-                  <div id="heroRecoverAccount" style="display: none; opacity: 0;" data-target-group="idHeroSignupForm">
-                    <div class="card shadow-sm mb-4">
-                      <div class="card-body p-5">
-                        <h2 class="h6 text-muted font-weight-medium text-uppercase mb-3">Recover your account</h2>
-    
-                        <!-- Input -->
-                        <div class="js-form-message mb-3">
-                          <div class="js-focus-state input-group input-group form">
-                            <div class="input-group-prepend form__prepend">
-                              <span class="input-group-text form__text">
-                                <i class="fa fa-envelope form__text-inner"></i>
-                              </span>
-                            </div>
-                            <input type="email" class="form-control form__input" name="recoverEmail" required="" placeholder="Enter your email address" aria-label="Enter your email address">
-                          </div>
-                        </div>
-                        <!-- End Input -->
-    
-                        <button type="submit" class="btn btn-block btn-primary">Recover Account</button>
-                      </div>
-                    </div>
-    
-                    <div class="card shadow-sm">
-                      <div class="card-body p-5">
-                        <p class="mb-0">
-                          Have an account?
-                          <a class="js-animation-link" href="javascript:;" data-target="#heroSignin" data-link-group="idHeroSignupForm">Signin
-                          </a>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- End Recover Account -->
+                  <!-- End Signup -->         
                 </form>
                 <!-- End Signup Form -->
               </div>
@@ -541,7 +233,7 @@
       <!-- Challenges Section -->
       <div class="container space-2 space-3--lg">
         <div class="w-md-80 w-lg-60 text-center mx-md-auto mb-9">
-          <span class="u-label u-label--sm u-label--purple mb-3">Challenges</span>
+          <span class="u-label u-label--sm u-label--purple mb-3" id="Challenges">Challenges</span>
           <h2 class="h3">The traditional process of selling a property is complicated.<br />Here's why.</h2>
           <p>Most people don't understand the process of selling their property without a Realtor. The burden of organizing open houses, pricing analysis, and contractual agreements can be overwhelming.</p>
         </div>
