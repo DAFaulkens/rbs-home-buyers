@@ -25,6 +25,12 @@
 
         <!-- CSS Konectpal Template -->
         <link rel="stylesheet" href="../../assets/css/theme.css">
+
+        <!-- Scrollspy  -->
+        <script>
+          $('#we-buy-houses').scrollspy({ target: '#' });
+        </script>
+      <!-- End Scrollspy -->
 </head>
 
 <body>
@@ -137,8 +143,9 @@
                 <!-- End Divider -->
               </div>
               <!-- End Heading and description -->
+              
               <!-- Heading CTA -->
-              <div class="col-md-6 col-lg-5">
+              <div class="col-md-6 col-lg-5">    
                 <!-- Signup Form -->
                 <form id="get-started" class="js-validate" novalidate="novalidate">
                   <!-- Signup -->
@@ -146,28 +153,19 @@
                     <div class="card shadow-sm mb-4">
                       <div class="card-body p-5">
                         <h2 class="h6 text-muted font-weight-medium text-uppercase mb-3">Get started</h2>
-                        <p class="h6 lead mb-0 text-black-70 text-lh-sm">Where are you in the selling process?</p>
-                        <!-- Radio checkboxes -->
-                        <div class="form-check mb-3">
-                          <div class="form-check h6 text-muted font-weight-bold form-check">
-                            <input class="form-check-input" type="radio" name="signupRadios" id="signupRadios1" value="option1" />
-                            <label class="form-check-label" for="signupRadios1">Exploring Options</label>
-                          </div>
-                          <div class="form-check h6 text-muted font-weight-bold form-check">
-                            <input class="form-check-input" type="radio" name="signupRadios" id="signupRadios2" value="option2" />
-                            <label class="form-check-label" for="signupRadios2">House Listed</label>
-                          </div>
-                          <div class="form-check h6 text-muted font-weight-bold form-check">
-                            <input class="form-check-input" type="radio" name="signupRadios" id="signupRadios3" value="option3" />
-                            <label class="form-check-label" for="signupRadios3">Recieved Offer</label>
-                          </div>
-                          <div class="form-check h6 text-muted font-weight-bold form-check">
-                            <input class="form-check-input" type="radio" name="signupRadios" id="signupRadios4" value="option4" />
-                            <label class="form-check-label" for="signupRadios4">Other</label>
-                          </div>
+                        
+                        <!-- Form select -->
+                        <div class="js-form-message mb-3">
+                          <p class="h6 lead mb-0 text-black-70 text-lh-sm">Where are you in the selling process?</p>
+                          <select id="inputState" class="form-control form__input">
+                            <option selected="">Select One...</option>
+                            <option>Exploring Options</option>
+                            <option>House Listed</option>
+                            <option>Recieved Offer</option>
+                            <option>Other</option>
+                          </select>
                         </div>
-                        <!-- End Radio checkboxes -->
-
+      
                         <!-- First Name Input -->
                         <div class="js-form-message mb-3">
                           <div class="js-focus-state input-group input-group form">
@@ -206,10 +204,17 @@
                           </div>
                         </div>
                         <!-- End Phone Number Input -->
-                        <!-- End Form Disclaimer -->
+                        
+                        <!-- Form Disclaimer -->
                         <small class="form-text text-muted">By signing up, I agree to the <a href="../pages/terms.html">Terms of Service </a>and <a href="../pages/privacy.html">Privacy Policy </a>and expressly agree to receive Konectpal Invest marketing emails and texts. Message and Data Rates may apply.</small>
+                        <!-- End Form Disclaimer -->
+                        
+                        <!-- Form break -->
                         <hr class="my-4">
+
+                        <!-- Button -->
                         <button type="submit" class="btn btn-block btn-primary">Get a Cash Offer</button>
+                        <!-- End Button -->
                       </div>
                     </div>
                   </div>
@@ -866,11 +871,6 @@
     });
   </script>
 
-  <!-- Scrollspy  -->
-  <script>
-    $('body').scrollspy({ target: '#navbarScroll' });
-  </script>
-  <!-- End Scrollspy -->
   <!-- Cookie Consent by https://www.TermsFeed.com -->
   <script type="text/javascript" src="//www.termsfeed.com/public/cookie-consent/3.0.0/cookie-consent.js"></script>
   <script type="text/javascript">
