@@ -25,6 +25,12 @@
 
         <!-- CSS Konectpal Template -->
         <link rel="stylesheet" href="../../assets/css/theme.css">
+
+        <!-- Scrollspy  -->
+        <script>
+          $('#we-buy-houses').scrollspy({ target: '#' });
+        </script>
+      <!-- End Scrollspy -->
 </head>
 
 <body>
@@ -74,41 +80,37 @@
             <ul class="navbar-nav u-header__navbar-nav">
               <!-- Home -->
               <li class="nav-item u-header__nav-item">
-                <a class="nav-link u-header__nav-link" href="#">
-                  We Buy Houses
-                </a>
+                <a class="nav-link u-header__nav-link" href="#we-buy-houses">We Buy Houses</a>
               </li>
               <!-- End Home -->
 
               <!-- Challenges -->
-              <li class="nav-item hs-has-mega-menu u-header__nav-item">
-                <a class="nav-link u-header__nav-link" href="#challenges">
-                  Challenges
-                </a>
+              <li class="nav-item u-header__nav-item">
+                <a class="nav-link u-header__nav-link" href="#challenges">Challenges</a>
               </li>
               <!-- End Challenges -->
 
               <!-- How It Works -->
               <li class="nav-item u-header__nav-item">
-                <a class="nav-link u-header__nav-link" href="#">
-                      How It Works
-                </a>   
+                <a class="nav-link u-header__nav-link" href="#how-it-works">How It Works</a>
               </li>
               <!-- End How It Works  -->
 
               <!-- Solutions -->
               <li class="nav-item u-header__nav-item">
-                <a class="nav-link u-header__nav-link" href="#solutions">
-                      Solutions
-                </a>   
+                <a class="nav-link u-header__nav-link" href="#solutions">Solutions</a>   
               </li>
               <!-- End Solutions  -->
 
+              <!-- Contact Us -->
+              <li class="nav-item u-header__nav-item">
+                <a class="nav-link u-header__nav-link" href="#contact">Contact Us</a>
+              </li>
+              <!-- End Contact Us -->
+
               <!-- Button CTA -->
               <li class="nav-item u-header__nav-item-btn">
-                <a class="btn btn-sm btn-outline-primary" href="#get-started" data-toggle="modal">
-                  Get Started
-                </a>
+                <a class="btn btn-sm btn-outline-primary" href="#get-started">Get Started</a>
               </li>
               <!-- End Button CTA -->
             </ul>
@@ -122,7 +124,7 @@
   <!-- ========== END HEADER & Navbar ========== -->
 
   <!-- ========== MAIN CONTENT ========== -->
-  <main id="content" data-spy="scroll" data-target="#navbarScroll" data-offset="0">
+  <main id="content" class="navbarScroll" data-spy="scroll" data-target="#navbarScroll" data-offset="0">
   
       <!-- Hero Section -->
         <div class="gradient-overlay-dark-v1 bg-img-hero" style="background-image: url(../../assets/img/demo/real-estate/jumbotron.jpg);">
@@ -130,7 +132,7 @@
             <div class="row justify-content-lg-between align-items-md-center">
               <!-- Heading and description -->
               <div class="col-md-6 col-lg-5 mb-9 mb-md-0">
-                <h2 id="#" class="display-4 text-white font-size-48--md-down mb-3">Sell your home with certainty, speed, and transparency.</h2>
+                <h2 id="we-buy-houses" class="display-4 text-white font-size-48--md-down mb-3">Sell your home with certainty, speed, and transparency.</h2>
                 <div class="mb-5">
                   <p class="lead mb-0 text-white-70 text-lh-sm">We are improving the process of buying and selling properties by working directly with homeowners.<br /><strong class="text-light">No Realtors. No commissions.</strong><br />Let us buy your home—close on your terms and save time and money.</p>
                 </div>
@@ -141,37 +143,29 @@
                 <!-- End Divider -->
               </div>
               <!-- End Heading and description -->
+              
               <!-- Heading CTA -->
-              <div class="col-md-6 col-lg-5">
+              <div class="col-md-6 col-lg-5">    
                 <!-- Signup Form -->
-                <form class="js-validate" novalidate="novalidate">
+                <form id="get-started" class="js-validate" novalidate="novalidate">
                   <!-- Signup -->
                   <div id="heroSignup" data-target-group="idHeroSignupForm">
                     <div class="card shadow-sm mb-4">
                       <div class="card-body p-5">
                         <h2 class="h6 text-muted font-weight-medium text-uppercase mb-3">Get started</h2>
-                        <p class="h6 lead mb-0 text-black-70 text-lh-sm">Where are you in the selling process?</p>
-                        <!-- Radio checkboxes -->
-                        <div class="form-check mb-3">
-                          <div class="form-check h6 text-muted font-weight-bold form-check">
-                            <input class="form-check-input" type="radio" name="signupRadios" id="signupRadios1" value="option1" />
-                            <label class="form-check-label" for="signupRadios1">Exploring Options</label>
-                          </div>
-                          <div class="form-check h6 text-muted font-weight-bold form-check">
-                            <input class="form-check-input" type="radio" name="signupRadios" id="signupRadios2" value="option2" />
-                            <label class="form-check-label" for="signupRadios2">House Listed</label>
-                          </div>
-                          <div class="form-check h6 text-muted font-weight-bold form-check">
-                            <input class="form-check-input" type="radio" name="signupRadios" id="signupRadios3" value="option3" />
-                            <label class="form-check-label" for="signupRadios3">Recieved Offer</label>
-                          </div>
-                          <div class="form-check h6 text-muted font-weight-bold form-check">
-                            <input class="form-check-input" type="radio" name="signupRadios" id="signupRadios4" value="option4" />
-                            <label class="form-check-label" for="signupRadios4">Other</label>
-                          </div>
+                        
+                        <!-- Form select -->
+                        <div class="js-form-message mb-3">
+                          <p class="h6 lead mb-0 text-black-70 text-lh-sm">Where are you in the selling process?</p>
+                          <select id="inputState" class="form-control form__input">
+                            <option selected="">Select One...</option>
+                            <option>Exploring Options</option>
+                            <option>House Listed</option>
+                            <option>Recieved Offer</option>
+                            <option>Other</option>
+                          </select>
                         </div>
-                        <!-- End Radio checkboxes -->
-
+      
                         <!-- First Name Input -->
                         <div class="js-form-message mb-3">
                           <div class="js-focus-state input-group input-group form">
@@ -210,10 +204,17 @@
                           </div>
                         </div>
                         <!-- End Phone Number Input -->
-                        <!-- End Form Disclaimer -->
+                        
+                        <!-- Form Disclaimer -->
                         <small class="form-text text-muted">By signing up, I agree to the <a href="../pages/terms.html">Terms of Service </a>and <a href="../pages/privacy.html">Privacy Policy </a>and expressly agree to receive Konectpal Invest marketing emails and texts. Message and Data Rates may apply.</small>
+                        <!-- End Form Disclaimer -->
+                        
+                        <!-- Form break -->
                         <hr class="my-4">
+
+                        <!-- Button -->
                         <button type="submit" class="btn btn-block btn-primary">Get a Cash Offer</button>
+                        <!-- End Button -->
                       </div>
                     </div>
                   </div>
@@ -231,9 +232,9 @@
       <hr class="my-0">
 
       <!-- Challenges Section -->
-      <div class="container space-2 space-3--lg">
+      <div id="challenges" class="container space-2 space-3--lg">
         <div class="w-md-80 w-lg-60 text-center mx-md-auto mb-9">
-          <span class="u-label u-label--sm u-label--purple mb-3" id="Challenges">Challenges</span>
+          <span class="u-label u-label--sm u-label--purple mb-3">Challenges</span>
           <h2 class="h3">The traditional process of selling a property is complicated.<br />Here's why.</h2>
           <p>Most people don't understand the process of selling their property without a Realtor. The burden of organizing open houses, pricing analysis, and contractual agreements can be overwhelming.</p>
         </div>
@@ -244,7 +245,7 @@
       <hr class="my-0">
 
       <!-- Process - How it works -->
-      <div class="space-2 space-3--lg gradient-overlay-quarter-light-v1">
+      <div id="how-it-works" class="space-2 space-3--lg gradient-overlay-quarter-light-v1">
         <div class="container">
           <!-- Title -->
           <div class="w-md-80 w-lg-60 mx-md-auto text-md-center mb-6">
@@ -382,28 +383,28 @@
                  }
                }]'>
             <div class="js-slide">
-              <img class="u-clients" src="../../assets/img/clients/amazon-white.png" alt="Image Description">
+              <img class="u-clients" src="../../assets/img/clients/amazon-white.png" alt="Amazon Logo">
             </div>
             <div class="js-slide">
-              <img class="u-clients" src="../../assets/img/clients/google-white.png" alt="Image Description">
+              <img class="u-clients" src="../../assets/img/clients/google-white.png" alt="Google Logo">
             </div>
             <div class="js-slide">
-              <img class="u-clients" src="../../assets/img/clients/paypal-white.png" alt="Image Description">
+              <img class="u-clients" src="../../assets/img/clients/paypal-white.png" alt="Paypal Logo>
             </div>
             <div class="js-slide">
-              <img class="u-clients" src="../../assets/img/clients/slack-white.png" alt="Image Description">
+              <img class="u-clients" src="../../assets/img/clients/slack-white.png" alt="Slack Logo">
             </div>
             <div class="js-slide">
-              <img class="u-clients" src="../../assets/img/clients/samsung-white.png" alt="Image Description">
+              <img class="u-clients" src="../../assets/img/clients/samsung-white.png" alt="Samsung Logo">
             </div>
             <div class="js-slide">
-              <img class="u-clients" src="../../assets/img/clients/airbnb-white.png" alt="Image Description">
+              <img class="u-clients" src="../../assets/img/clients/airbnb-white.png" alt="Airbnb Logo">
             </div>
             <div class="js-slide">
-              <img class="u-clients" src="../../assets/img/clients/lenovo-white.png" alt="Image Description">
+              <img class="u-clients" src="../../assets/img/clients/lenovo-white.png" alt="Lenovo Logo">
             </div>
             <div class="js-slide">
-              <img class="u-clients" src="../../assets/img/clients/spotify-white.png" alt="Image Description">
+              <img class="u-clients" src="../../assets/img/clients/spotify-white.png" alt="Spotify Logo">
             </div>
           </div>
             <!-- Slick Carousel -->
@@ -413,7 +414,7 @@
       <!-- End CTA -->
 
       <!-- Solution (How we're different) -->
-      <div class="space-2 space-3-bottom--lg overflow-hidden">
+      <div id="solutions" class="space-2 space-3-bottom--lg overflow-hidden">
         <div class="container">
           <div class="row no-gutters align-items-center">
             <div class="col-lg-5 mb-5 mb-lg-0">
@@ -492,14 +493,15 @@
       <hr class="my-4">
 
       <!-- Contacts Section -->
-      <div class="container space-2-bottom space-3-bottom--lg">
+      <div id="contact" class="container space-2-bottom space-3-bottom--lg">
+        <span class="u-label u-label--sm u-label--purple mb-3">Get in touch</span>
         <div class="row no-gutters border shadow rounded">
           <div class="col-lg-5 bg-primary rounded">
             <div class="p-5 p-md-9">
               <!-- Title -->
               <div class="mb-5">
-                <h2 class="text-white">Contact us</h2>
-                <p class="text-light">Contact us today to learn more about how Konectpal Invest can help your business.</p>
+                <h2 class="text-white">Contact Us</h2>
+                <p class="text-light">Get in touch with us today to learn more about how Konectpal Invest can help you out</p>
               </div>
               <!-- End Title -->
   
@@ -799,7 +801,7 @@
   <script src="../../assets/vendor/slick-carousel/slick/slick.js"></script>
   <script src="../../assets/vendor/fancybox/jquery.fancybox.min.js"></script>
 
-  <!-- JS Space -->
+  <!-- JS Konectpal -->
   <script src="../../assets/js/hs.core.js"></script>
   <script src="../../assets/js/components/hs.header.js"></script>
   <script src="../../assets/js/components/hs.unfold.js"></script>
@@ -868,6 +870,7 @@
       $.HSCore.components.HSGoTo.init('.js-go-to');
     });
   </script>
+
   <!-- Cookie Consent by https://www.TermsFeed.com -->
   <script type="text/javascript" src="//www.termsfeed.com/public/cookie-consent/3.0.0/cookie-consent.js"></script>
   <script type="text/javascript">
