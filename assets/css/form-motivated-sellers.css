@@ -121,7 +121,7 @@ body {
     right: 5px;
 }
 
-.form-control.success i.fas-check-circle {
+.form-control.success i.fas-fa-check-circle {
     color: var(--primary);
     visibility: visible;
 }
