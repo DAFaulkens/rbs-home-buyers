@@ -25,6 +25,12 @@
 
         <!-- CSS Konectpal Template -->
         <link rel="stylesheet" href="../../assets/css/theme.css">
+
+        <!-- Scrollspy  -->
+        <script>
+          $('#we-buy-houses').scrollspy({ target: '#' });
+        </script>
+      <!-- End Scrollspy -->
 </head>
 
 <body>
@@ -37,19 +43,20 @@
   <!-- End Skippy -->
 
   <!-- ========== HEADER & Navbar ========== -->
-  
-  <header id="header" class="u-header u-header--bg-transparent u-header--white-nav-links u-header--sticky-top-sm">
+  <header id="header" class="u-header u-header--bg-transparent u-header--white-nav-links u-header--sticky-top-lg">
     <div class="u-header__section">
       <div id="logoAndNav" class="container">
         <!-- Nav -->
         <nav id="navbarScroll" class="js-mega-menu navbar navbar-expand-lg u-header__navbar">
           <!-- Logo -->
           <div class="u-header__navbar-brand-wrapper">
-            <a class="navbar-brand u-header_navbar-brand" href="#" aria-label="Konectpal">
-              <img class="u-header__navbar-brand-default" src="../../assets/svg/logos/flaticon-logo.svg" alt="logo">
-              <img class="u-header__navbar-brand-on-scroll" src="../../assets/svg/logos/flaticon-logo.svg" alt="logo"> 
-              <img class="u-header__navbar-brand-mobile" src="../../assets/svg/logos/flaticon-logo.svg" alt="logo" style="width: 40px; max-width: 100%;">
-              <span class="d-none d-sm-inline-block text-dark font-weight-medium">Konectpal</span>
+            <a class="navbar-brand u-header__navbar-brand" href="index.html" aria-label="Konectpal">
+              <img class="u-header__navbar-brand-default" src="../../assets/svg/logos/logo-white.svg" alt="Logo" style="width: 350px; max-width: 100%;">
+              <img class="u-header__navbar-brand-on-scroll" src="../../assets/svg/logos/logo-short.svg" alt="Logo" style="width: 40px; max-width: 100%;">
+              <img class="u-header__navbar-brand-mobile" src="../../assets/svg/logos/logo-short.svg" alt="Logo" style="width: 40px; max-width: 100%;">
+              <!-- <img class="u-header__navbar-brand-default" src="../../assets/svg/logos/logo-konectpal.svg" alt="Logo" style="width: 350px; max-width: 100%;">
+              <img class="u-header__navbar-brand-on-scroll" src="../../assets/svg/logos/logo-konectpal-short.svg" alt="Logo" style="width: 40px; max-width: 100%;">
+              <img class="u-header__navbar-brand-mobile" src="../../assets/svg/logos/logo-konectpal-short.svg" alt="Logo" style="width: 40px; max-width: 100%;"> -->
             </a>
           </div>
           <!-- End Logo -->
@@ -61,7 +68,7 @@
                   aria-controls="navBar"
                   data-toggle="collapse"
                   data-target="#navBar">
-            <span class="d-none d-sm-inline-block text-dark">Menu</span>
+            <span class="d-none d-sm-inline-block">Menu</span>
             <span id="hamburgerTrigger" class="u-hamburger__box ml-3">
               <span class="u-hamburger__inner"></span>
             </span>
@@ -140,25 +147,25 @@
               <!-- Heading CTA -->
               <div class="col-md-6 col-lg-5">    
                 <!-- Signup Form -->
-                <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdmzJ1IbH4tuEaZzf_OVQckL91cZhuZ83xBgQ9azW7wTwvfzg/formResponse" target="_self" method="POST" id="get-started" class="js-validate" novalidate="">
+                <form id="get-started" class="js-validate" novalidate="novalidate">
                   <!-- Signup -->
                   <div id="heroSignup" data-target-group="idHeroSignupForm">
                     <div class="card shadow-sm mb-4">
                       <div class="card-body p-5">
                         <h2 class="h6 text-muted font-weight-medium text-uppercase mb-3">Get started</h2>
                         
-                         <!-- Form select -->
-                         <div class="js-form-message mb-3">
+                        <!-- Form select -->
+                        <div class="js-form-message mb-3">
                           <p class="h6 lead mb-0 text-black-70 text-lh-sm">Where are you in the selling process?</p>
-                          <select id="inputState" class="form-control form__input" required="true" name="entry.975124448">
-                            <option>Select One...</option>
+                          <select id="inputState" class="form-control form__input">
+                            <option selected="">Select One...</option>
                             <option>Exploring Options</option>
                             <option>House Listed</option>
+                            <option>Recieved Offer</option>
+                            <option>Other</option>
                           </select>
-                          <input type="hidden" name="entry.975124448" disabled="">
                         </div>
-                        <!-- End Form select -->
-
+      
                         <!-- First Name Input -->
                         <div class="js-form-message mb-3">
                           <div class="js-focus-state input-group input-group form">
@@ -167,7 +174,7 @@
                                 <i class="fa fa-user form__text-inner"></i>
                               </span>
                             </div>
-                            <input type="text" class="form-control form__input" name="entry.2005620554" required="" placeholder="First Name" aria-label="First Name">
+                            <input type="text" class="form-control form__input" name="signupFirstName" required="" placeholder="First Name" aria-label="First Name">
                           </div>
                         </div>
                         <!-- End First Name Input -->
@@ -180,7 +187,7 @@
                                 <i class="fa fa-envelope form__text-inner"></i>
                               </span>
                             </div>
-                            <input type="email" class="form-control form__input" name="entry.1045781291" required="" placeholder="Enter your email" aria-label="Enter your email" data-msg="Please enter a valid email address." data-error-class="u-has-error" data-success-class="u-has-success">
+                            <input type="email" class="form-control form__input" name="signupEmail" required="" placeholder="Enter your email address" aria-label="Enter your email address" data-msg="Please enter a valid email address." data-error-class="u-has-error" data-success-class="u-has-success">
                           </div>
                         </div>
                         <!-- End Email Input -->
@@ -193,11 +200,11 @@
                                 <i class="fa fa-phone form__text-inner"></i>
                               </span>
                             </div>
-                            <input type="text" class="form-control form__input" name="entry.1065046570" required="" placeholder="Enter mobile number" aria-label="Enter mobile number">
+                            <input type="text" class="form-control form__input" name="signupPhoneNumber" required="" placeholder="Enter mobile number" aria-label="Enter mobile number">
                           </div>
                         </div>
                         <!-- End Phone Number Input -->
-
+                        
                         <!-- Form Disclaimer -->
                         <small class="form-text text-muted">By signing up, I agree to the <a href="../pages/terms.html">Terms of Service </a>and <a href="../pages/privacy.html">Privacy Policy </a>and expressly agree to receive Konectpal Invest marketing emails and texts. Message and Data Rates may apply.</small>
                         <!-- End Form Disclaimer -->
@@ -668,7 +675,7 @@
         <div class="col-lg-4 order-lg-1 d-flex align-items-start flex-column">
           <!-- Logo -->
           <a class="d-inline-block mb-5" href="index.html" aria-label="Konectpal">
-            <img src="../../assets/svg/logos/flaticon-logo.svg" alt="Logo" style="width: 40px; max-width: 100%;">
+            <img src="../../assets/svg/logos/logo-konectpal-short.svg" alt="Logo" style="width: 40px; max-width: 100%;">
             <!-- <img src="../../assets/svg/logos/logo-short-white.svg" alt="Logo" style="width: 40px; max-width: 100%;"> -->
           </a>
           <!-- End Logo -->
@@ -814,7 +821,7 @@
       $('.js-mega-menu').HSMegaMenu({
         event: 'hover',
         pageContainer: $('.container'),
-        breakpoint: 767.98,
+        breakpoint: 991,
         hideTimeOut: 0
       });
     });
