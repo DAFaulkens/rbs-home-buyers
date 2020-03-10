@@ -1,0 +1,115 @@
+:root {
+    --base-color: #007bff;
+    /* Responsive breakpoints */
+    
+    /* Extra small devices (portrait phones, less than 576px) */
+    /* No media query for `xs` since this is the default in Bootstrap */
+
+    /* Small devices (landscape phones, 576px and up) */
+    /* @media (min-width: 576px) { ... } */
+
+    /* Medium devices (tablets, 768px and up) */
+    /* @media (min-width: 768px) { ... } */
+
+    /* Large devices (desktops, 992px and up) */
+    /* @media (min-width: 992px) { ... } */
+
+    /* Extra large devices (large desktops, 1200px and up) */
+    /* @media (min-width: 1200px) { ... } */
+
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+
+    /* Font family */
+    --font-family-sans-serif: -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+    
+    
+
+}
+
+/* Page Defaults HTML and Body elements */
+*, 
+*::before, 
+*::after {
+    /* Box sizing globally set on every element 
+    ensuring that the declared width of element 
+    is never exceeded due to padding or border. */
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+/* HTML  */
+/* Responsive typography */
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 1rem;
+    
+}
+
+@include media-breakpoint-up(sm) {
+    html {
+        font-size: 1.2rem;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    html {
+        font-size: 1.4rem;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    html {
+        font-size: 1.6rem;
+    }
+}
+
+/* Body */
+body {
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    line-height: inherit;
+    text-align: inherit;
+    background-color: #f7f7f7;
+}
+
+
+/* Navbar */
+.u-hamburger_box {
+    width: 1.374rem;
+    height: 0.625rem;
+    display: inline-block;
+    position: relative;
+}
+
+.u-hambuger_inner, .u-hambuger_inner::before, .u-hambuger_inner::after {
+    width: 1.375rem;
+    height: 0.125rem;
+    background-color: #8c98a4;
+    position: absolute;
+    transition: transform, webkit-transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+.ml-3 {
+    margin-left: 1rem !important;
+}
+
+
+.d-none {
+    display: none !important;
+}
+
+@media (min-width: 576px)
+.d-sm-inline-block {
+    display: inline-block !important;
+}
+
+.button:hover {
+    color: blue;
+}
