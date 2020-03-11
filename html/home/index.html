@@ -136,41 +136,48 @@
                 <!-- End Divider -->
               </div>
               <!-- End Heading and description -->
-              
+
+              <script type="text/javascript">var submitted="false;"</script>
+
+              <!-- Update the URL for the thank you page on form submit -->
+              <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
+                onload="if(submitted) {window.location='https:\/\/konectpalinvest.com/thankyou/';}">
+              </iframe>
+
               <!-- Heading CTA -->
               <div class="col-md-6 col-lg-5">    
                 <!-- Signup Form -->
-                <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdmzJ1IbH4tuEaZzf_OVQckL91cZhuZ83xBgQ9azW7wTwvfzg/formResponse" target="_self" method="POST" id="get-started" class="js-validate" novalidate="">
+                <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScjQBvdEmOysGAQbalLibfXiwDgqyrBGYLrqZcrSKe9-OoKiw/formResponse" target="_self" method="POST" id="get-started" class="js-validate" novalidate="">
                   <!-- Signup -->
                   <div id="heroSignup" data-target-group="idHeroSignupForm">
                     <div class="card shadow-sm mb-4">
                       <div class="card-body p-5">
                         <h2 class="h6 text-muted font-weight-medium text-uppercase mb-3">Get started</h2>
-                        
-                         <!-- Form select -->
-                         <div class="js-form-message mb-3">
-                          <p class="h6 lead mb-0 text-black-70 text-lh-sm">Where are you in the selling process?</p>
-                          <select id="inputState" class="form-control form__input" required="true" name="entry.975124448">
-                            <option>Select One...</option>
-                            <option>Exploring Options</option>
-                            <option>House Listed</option>
-                          </select>
-                          <input type="hidden" name="entry.975124448" disabled="">
-                        </div>
-                        <!-- End Form select -->
-
-                        <!-- First Name Input -->
-                        <div class="js-form-message mb-3">
-                          <div class="js-focus-state input-group input-group form">
-                            <div class="input-group-prepend form__prepend">
-                              <span class="input-group-text form__text">
-                                <i class="fa fa-user form__text-inner"></i>
-                              </span>
+                        <div class="js-form-message mb-3 row">
+                          <div class="col">
+                            <!-- First Name -->
+                            <div class="js-focus-state input-group input-group form">
+                              <div class="input-group-prepend form__prepend">
+                                <span class="input-group-text form__text">
+                                  <i class="fa fa-user form__text-inner"></i>
+                                </span>
+                              </div>
+                              <input type="text" class="form-control form__input" name="entry.1035101015" required="" placeholder="First Name" aria-label="First Name">
                             </div>
-                            <input type="text" class="form-control form__input" name="entry.2005620554" required="" placeholder="First Name" aria-label="First Name">
+                          </div>
+                          <div class="col">
+                            <!-- Last Name -->
+                            <div class="js-focus-state input-group input-group form">
+                              <div class="input-group-prepend form__prepend">
+                                <span class="input-group-text form__text">
+                                  <i class="fa fa-user form__text-inner"></i>
+                                </span>
+                              </div>
+                              <input type="text" class="form-control form__input" name="entry.2119446046" required="" placeholder="Last Name" aria-label="Last Name">
+                            </div>
                           </div>
                         </div>
-                        <!-- End First Name Input -->
+                        <!-- End Last Name Input -->
 
                         <!-- Email Input -->
                         <div class="js-form-message mb-3">
@@ -180,7 +187,7 @@
                                 <i class="fa fa-envelope form__text-inner"></i>
                               </span>
                             </div>
-                            <input type="email" class="form-control form__input" name="entry.1045781291" required="" placeholder="Enter your email" aria-label="Enter your email" data-msg="Please enter a valid email address." data-error-class="u-has-error" data-success-class="u-has-success">
+                            <input type="email" class="form-control form__input" name="entry.774377731" required="" placeholder="Enter your email" aria-label="Enter your email" data-msg="Please enter a valid email address." data-error-class="u-has-error" data-success-class="u-has-success">
                           </div>
                         </div>
                         <!-- End Email Input -->
@@ -193,10 +200,35 @@
                                 <i class="fa fa-phone form__text-inner"></i>
                               </span>
                             </div>
-                            <input type="tel" class="form-control form__input" name="entry.1065046570" required="" placeholder="Enter mobile number" aria-label="Enter mobile number" data-msg="Please enter a valid phone number." data-error-class="u-has-error" data-success-class="u-has-success">
+                            <input type="tel" class="form-control form__input" name="entry.1306679765" required="" placeholder="Enter mobile number" aria-label="Enter mobile number" data-msg="Please enter a valid phone number." data-error-class="u-has-error" data-success-class="u-has-success" >
                           </div>
                         </div>
                         <!-- End Phone Number Input -->
+
+                        <!-- How Can We Help You? -->
+                        <p class="form-text text-secondary">How can we help you?</p>
+                        
+                        <!-- Checkbox 1 - Schedule a call or meeting -->
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="customCheck1" name="entry.1630044437"/>
+                          <label class="form-text custom-control-label" for="customCheck1">Schedule a call or meeting</label>
+                        </div>
+                        <!-- End Checkbox 1 - Schedule a call or meeting -->
+
+                        <!-- Checkbox 2 - Schedule a call or meeting -->
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="customCheck2" name="entry.1630044437"/>
+                          <label class="form-text custom-control-label" for="customCheck2">I need immediate assistance</label>
+                        </div>
+                        <!-- End Checkbox 2 - Schedule a call or meeting -->
+
+                        <!-- Checkbox 3 - Schedule a call or meeting -->
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="customCheck3" name="entry.1630044437"/>
+                          <label class="form-text custom-control-label" for="customCheck3">Other</label>
+                        </div>
+                        <!-- End Checkbox 3 - Schedule a call or meeting -->
+                        <!-- End How Can We Help You? -->
 
                         <!-- Form Disclaimer -->
                         <small class="form-text text-muted">By signing up, I agree to the <a href="../pages/terms.html">Terms of Service </a>and <a href="../pages/privacy.html">Privacy Policy </a>and expressly agree to receive Konectpal Invest marketing emails and texts. Message and Data Rates may apply.</small>
