@@ -121,12 +121,12 @@ body {
     right: 5px;
 }
 
-.form-control.success i.fas-fa-check-circle {
+.form-control.success i.fa-check-circle {
     color: var(--primary);
     visibility: visible;
 }
 
-.form-control.error i.fas-fa-exlamation-circle {
+.form-control.error i.fa-exlamation-circle {
     color: var(--danger);
     visibility: visible;
 }

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
         <!-- Title -->
-        <title>Real Estate | Konectpal Investments - Connecting Real Estate Buyers with Investors</title>
+        <title>We Buy Houses | Konectpal Invest - Connecting Real Estate Buyers with Investors</title>
 
         <!-- Required Meta Tags Always Come First -->
         <meta charset="utf-8">
@@ -193,7 +193,7 @@
                                 <i class="fa fa-phone form__text-inner"></i>
                               </span>
                             </div>
-                            <input type="text" class="form-control form__input" name="entry.1065046570" required="" placeholder="Enter mobile number" aria-label="Enter mobile number">
+                            <input type="tel" class="form-control form__input" name="entry.1065046570" required="" placeholder="Enter mobile number" aria-label="Enter mobile number" data-msg="Please enter a valid phone number." data-error-class="u-has-error" data-success-class="u-has-success">
                           </div>
                         </div>
                         <!-- End Phone Number Input -->
@@ -806,6 +806,7 @@
   <script src="../../assets/js/components/hs.fancybox.js"></script>
   <script src="../../assets/js/components/hs.go-to.js"></script>
   <script src="../../assets/js/components/hs.wizard.js"></script>
+  <script src="../../assets/js/theme-custom.js"></script>
 
   <!-- JS Plugins Init. -->
   <script>
@@ -837,7 +838,7 @@
         rules: {
           confirmPassword: {
             equalTo: '#password'
-          }
+          },
         }
       });
 
@@ -863,7 +864,7 @@
       $.HSCore.components.HSGoTo.init('.js-go-to');
     });
   </script>
-
+  
   <!-- Cookie Consent by https://www.TermsFeed.com -->
   <script type="text/javascript" src="//www.termsfeed.com/public/cookie-consent/3.0.0/cookie-consent.js"></script>
   <script type="text/javascript">
