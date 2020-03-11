@@ -128,6 +128,18 @@
                 <h2 id="we-buy-houses" class="display-4 text-white font-size-48--md-down mb-3">Sell your home with certainty, speed, and transparency.</h2>
                 <div class="mb-5">
                   <p class="lead mb-0 text-white-70 text-lh-sm">We are improving the process of buying and selling properties by working directly with homeowners.<br /><strong class="text-light">No Realtors. No commissions.</strong><br />Let us buy your home—close on your terms and save time and money.</p>
+                  <div class="w-100">
+                    <a class="js-go-to u-go-to bg-transparent" href="#challenges"
+                    data-target="#challenges"
+                    data-is-referenced-to-page="true"
+                    data-type="static"
+                    data-show-effect="slideInUp"
+                    data-hide-effect="slideOutDown">
+                    <span class="d-none fas fa-arrow-down u-go-to__inner"></span>
+                    <input class="btn btn-outline-purple" type="button" value="Learn More" />
+                    </a>
+                  </div>
+                  
                 </div>
                 <!-- Divider -->
                 <div class="w-25">
@@ -141,7 +153,7 @@
 
               <!-- Update the URL for the thank you page on form submit -->
               <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
-                onload="if(submitted) {window.location='https:\/\/konectpalinvest.com/thankyou/';}">
+                onsubmit="if(submitted) {window.location='https:\/\/konectpalinvest.com/thankyou/';}">
               </iframe>
 
               <!-- Heading CTA -->
@@ -153,28 +165,29 @@
                     <div class="card shadow-sm mb-4">
                       <div class="card-body p-5">
                         <h2 class="h6 text-muted font-weight-medium text-uppercase mb-3">Get started</h2>
-                        <div class="js-form-message mb-3 row">
-                          <div class="col">
-                            <!-- First Name -->
-                            <div class="js-focus-state input-group input-group form">
-                              <div class="input-group-prepend form__prepend">
-                                <span class="input-group-text form__text">
-                                  <i class="fa fa-user form__text-inner"></i>
-                                </span>
-                              </div>
-                              <input type="text" class="form-control form__input" name="entry.1035101015" required="" placeholder="First Name" aria-label="First Name">
+                        
+                        <!-- First Name -->
+                        <div class="js-form-message mb-3">
+                          <div class="js-focus-state input-group input-group form">
+                            <div class="input-group-prepend form__prepend">
+                              <span class="input-group-text form__text">
+                                <i class="fa fa-user form__text-inner"></i>
+                              </span>
                             </div>
+                            <input type="text" class="form-control form__input" name="entry.1035101015" required="" placeholder="First Name" aria-label="First Name">
                           </div>
-                          <div class="col">
-                            <!-- Last Name -->
-                            <div class="js-focus-state input-group input-group form">
-                              <div class="input-group-prepend form__prepend">
-                                <span class="input-group-text form__text">
-                                  <i class="fa fa-user form__text-inner"></i>
-                                </span>
-                              </div>
-                              <input type="text" class="form-control form__input" name="entry.2119446046" required="" placeholder="Last Name" aria-label="Last Name">
+                        </div>
+                        <!-- End First Name -->
+
+                        <!-- Last Name -->
+                        <div class="js-form-message mb-3">
+                          <div class="js-focus-state input-group input-group form">
+                            <div class="input-group-prepend form__prepend">
+                              <span class="input-group-text form__text">
+                                <i class="fa fa-user form__text-inner"></i>
+                              </span>
                             </div>
+                            <input type="text" class="form-control form__input" name="entry.2119446046" required="" placeholder="Last Name" aria-label="Last Name">
                           </div>
                         </div>
                         <!-- End Last Name Input -->
@@ -206,29 +219,23 @@
                         <!-- End Phone Number Input -->
 
                         <!-- How Can We Help You? -->
-                        <p class="form-text text-secondary">How can we help you?</p>
-                        
-                        <!-- Checkbox 1 - Schedule a call or meeting -->
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input" id="customCheck1" name="entry.1630044437"/>
-                          <label class="form-text custom-control-label" for="customCheck1">Schedule a call or meeting</label>
+                        <div class="js-form-message mb-3">
+                          <div class="js-focus state input-group input-group form">
+                            <div class="input-group-prepend form_prepend">
+                              <span class="input-group-text form_text">
+                                <i class="fas fa-comment-alt"></i>
+                              </span>
+                            </div>
+                            <label class="h6 small d-inline-flex text-uppercase" for="formControlSelect1" name="entry.1630044437"></label>
+                            <select class="form-control text-muted" id="formControlSelect1">
+                              <option>How Can We help You?</option>
+                              <option>Schedule a call or meeting</option>
+                              <option>I need immediate assistance</option>
+                              <option>Other</option>
+                            </select>
+                          </div>
                         </div>
-                        <!-- End Checkbox 1 - Schedule a call or meeting -->
-
-                        <!-- Checkbox 2 - Schedule a call or meeting -->
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input" id="customCheck2" name="entry.1630044437"/>
-                          <label class="form-text custom-control-label" for="customCheck2">I need immediate assistance</label>
-                        </div>
-                        <!-- End Checkbox 2 - Schedule a call or meeting -->
-
-                        <!-- Checkbox 3 - Schedule a call or meeting -->
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input" id="customCheck3" name="entry.1630044437"/>
-                          <label class="form-text custom-control-label" for="customCheck3">Other</label>
-                        </div>
-                        <!-- End Checkbox 3 - Schedule a call or meeting -->
-                        <!-- End How Can We Help You? -->
+                        <!-- End How Can We Help You -->
 
                         <!-- Form Disclaimer -->
                         <small class="form-text text-muted">By signing up, I agree to the <a href="../pages/terms.html">Terms of Service </a>and <a href="../pages/privacy.html">Privacy Policy </a>and expressly agree to receive Konectpal Invest marketing emails and texts. Message and Data Rates may apply.</small>
