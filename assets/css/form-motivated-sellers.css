@@ -1,0 +1,157 @@
+/* Motivated Sellers Info Form */
+
+:root {
+    --blue: #1c6be1;
+    --indigo: #6610f2;
+    --purple: #796eff;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #8c98a4;
+    --gray-dark: #343a40;
+    --primary: #21c87a;
+    --secondary: #646f79;
+    --success: #21c87a;
+    --info: #00dffc;
+    --warning: #ffbc42;
+    --danger: #da4b48;
+    --light: #f5f8fb;
+    --dark: #151b26;
+    --purple: #796eff;
+    --blue: #1c6be1;
+    --primary-soft: rgba(33, 200, 122, 0.1);
+    --white-soft: rgba(255, 255, 255, 0.1);
+    --dark-soft: rgba(21, 27, 38, 0.4);
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: "Roboto", Helvetica, Arial, sans-serif;
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+*,
+*::before,
+*::after {
+
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: var(--purple);
+    display: -ms-flexbox;
+    display: flex;
+    font-family: inherit;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    width: 400px;
+    max-width: 100%;
+}
+
+.header {
+    border-bottom: 1px solid #f0f0f0;
+    background-color: #f7f7f7;
+    padding: 20px 40px;
+}
+
+.header h2 {
+    margin: 0;
+}
+
+.form {
+    padding: 30px 40px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    padding: 10px;
+    width: 100%;
+}
+
+.form-control input:focus {
+    outline: 0;
+    border-color: #fff;
+}
+
+.form-control.success input {
+    border-color: var(--primary);
+}
+
+.form-control.error input {
+    border-color: var(--danger);
+}
+
+.form-control i {
+    visibility: hidden;
+    position: absolute;
+    top: 34px;
+    right: 5px;
+}
+
+.form-control.success i.fa-check-circle {
+    color: var(--primary);
+    visibility: visible;
+}
+
+.form-control.error i.fa-exlamation-circle {
+    color: var(--danger);
+    visibility: visible;
+}
+
+.form-control small {
+    color: var(--danger);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+.form button {
+    background-color: var(--purple);
+    border: 2px solid var(--purple);
+    border-radius: 4px;
+    color: var(--white);
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+}
