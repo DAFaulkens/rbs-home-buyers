@@ -1,10 +1,30 @@
-# Konectpal Investments
+# Konectpal Invest
 [![js-semistandard-style](https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg?style=flat-square)](https://github.com/standard/semistandard)
 
-## Introduction 
-Get started with the Konectpal Invest Responsive Website Template for building any responsive, mobile-first sites, with Bootstrap and a template starter page. 
+## Introduction
+
+**What is Konectpal Invest?**
+
+Konectpal Invest is the real estate hub for property owners and homebuyers. 
+This platform is designed to connect homeowners with real cash offers.
+
+### Project Scope
+This is part of an ongoing project for a client in the real estate industry. The client initially needed a simple online presence to send traffic. Potential clients are sellers, investors, house flippers, land developers and real estate agents. 
+
+For the initial release, I created a Bootstrap template website placing emphasis on being a mobile-first site as this target demographic was more likely to consume information while on the out on the job. This README.md showcases how you can get started with this template.
+
+**Moving forward:**
+
+New features is constantly being developed. I'm currently refactoring code to accommodate the following:
+- RESTful API
+- Graphic User Interface (GUI): Portal for internal purposes
+- CLI
+
+This documentation will be updated once the new functionality is in production.
 
 ### Getting Started
+
+Get started with the Konectpal Invest Responsive Website Template for building any responsive, mobile-first sites, with Bootstrap and a template starter page. 
 
 ### CSS
 
@@ -231,3 +251,5 @@ Initial release
 
 ## Author
 The Konectpal Invest website is created, written by, and maintained by [Fred Siika](https://github.com/fredsiika) and a team of swell people. The tech stack for this site is fairly [boring](https://css-tricks.com/simple-boring/). I've used GitHub pages to host the site since day one, a decision that I'm happy with. 
+
+**Permission has been granted by client to make this open-source.**
