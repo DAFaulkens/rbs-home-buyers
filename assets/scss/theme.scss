@@ -1,7 +1,7 @@
 // Bootstrap setup
 @import '../vendor/bootstrap/scss/functions';
 
-// Space setup
+// Konectpal setup
 @import 'space/variables';
 
 // Custom setup
@@ -11,13 +11,13 @@
 @import '../vendor/bootstrap/scss/bootstrap';
 
 /*----------------------------------------------------------------------
-  * Space - Responsive Website Template version v1.6
-  * Copyright 2019 Htmlstream
-  * Licensed under Bootstrap Themes (https://themes.getbootstrap.com/licenses/)
+  * Konectpal - Responsive Website Template version v1.0
+  * Copyright 2020 Fred Siika
 ------------------------------------------------------------------------*/
 
 @import 'space/space';
 
 // Custom core
 @import 'user';
+@import 'konectpal/color-pallete.scss'
 
