@@ -13,7 +13,7 @@
   --red: #dc3545;
   --orange: #fd7e14;
   --yellow: #ffc107;
-  --green: #28a745;
+  --green: #85ffc7;
   --teal: #20c997;
   --cyan: #17a2b8;
   --white: #fff;
@@ -4793,8 +4793,8 @@ input[type="button"].btn-block {
 
 .navbar-brand {
   display: inline-block;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  /* padding-top: 0.5rem; */
+  /* padding-bottom: 0.5rem; */
   margin-right: 1rem;
   font-size: 1rem;
   line-height: inherit;
@@ -12301,9 +12301,8 @@ a.text-dark-soft:hover, a.text-dark-soft:focus {
 }
 
 /*----------------------------------------------------------------------
-  * Space - Responsive Website Template version v1.6
-  * Copyright 2019 Htmlstream
-  * Licensed under Bootstrap Themes (https://themes.getbootstrap.com/licenses/)
+  * Konectpal - Responsive Website Template version v1.0
+  * Copyright 2020 Fred Siika
 ------------------------------------------------------------------------*/
 .w-25 {
   width: 25% !important;
@@ -21199,3 +21198,9 @@ button:focus {
 /*------------------------------------
   File for your custom SCSS style
 ------------------------------------*/
+/* Coolors Exported Palette - coolors.co/85ffc7-091540-796eff-c9d7f8-646f79 */
+/*----------------------------------------------------------------------
+  * Konectpal Variables - Responsive Website Template version v1.0
+  * Copyright 2020 Fred Siika
+------------------------------------------------------------------------*/
+/* Coolors Exported Palette - coolors.co/85ffc7-091540-796eff-c9d7f8-646f79 */

@@ -3,24 +3,24 @@
   * Copyright 2020 Fred Siika
 ------------------------------------------------------------------------*/
 
-$root-path:             "../../";
+// $root-path:             "../../";
 
 // Breakpoints
 // =======================================================
 
-$xs:                    0;
-$sm:                    576px;
-$md:                    768px;
-$lg:                    992px;
-$xl:                    1200px;
+// $xs:                    0;
+// $sm:                    576px;
+// $md:                    768px;
+// $lg:                    992px;
+// $xl:                    1200px;
 
-$grid-breakpoints: (
-    xs:                 $xs,
-    sm:                 $sm,
-    md:                 $md,
-    lg:                 $lg,
-    xl:                 $xl
-) !default;
+// $grid-breakpoints: (
+//     xs:                 $xs,
+//     sm:                 $sm,
+//     md:                 $md,
+//     lg:                 $lg,
+//     xl:                 $xl
+// ) !default;
 
 // =======================================================
 // Color System
@@ -29,23 +29,23 @@ $grid-breakpoints: (
 // Stylelint-disable
 // =======================================================
 
-$white:                 #fff !default;
-$white-soft:            rgba($white, 0.1) !default;
-$dark:                  #151b26 !default;
-$dark-soft:             rgba($dark, .4) !default;
-$darker:                #181515 !default;
-$header-color:          #5a5757 !default;
+// $white:                 #fff !default;
+// $white-soft:            rgba($white, 0.1) !default;
+// $dark:                  #151b26 !default;
+// $dark-soft:             rgba($dark, .4) !default;
+// $darker:                #181515 !default;
+// $header-color:          #5a5757 !default;
 
 // Grays
 // =======================================================
 
-$gray-100:              #f5f8fb !default;
-$gray-150:              #bfc3ca !default;
-$gray-200:              #8f95a0 !default;
-$gray-300:              #e3e6f0 !default;
-$gray-400:              #d4d7dd !default;             
-$gray-600:              #8c98a4 !default;
-$gray-700:              #646f79 !default;
+// $gray-100:              #f5f8fb !default;
+// $gray-150:              #bfc3ca !default;
+// $gray-200:              #8f95a0 !default;
+// $gray-300:              #e3e6f0 !default;
+// $gray-400:              #d4d7dd !default;             
+// $gray-600:              #8c98a4 !default;
+// $gray-700:              #646f79 !default;
 
 // Gray Palettes
 // =======================================================
@@ -86,8 +86,8 @@ $darkred                   : #841e1b !default;
 // Color List
 // =======================================================
 
-$color-palette-names: "darkgray" "titlegray" "bodygray" "lightgray" "subduedgray" "darkblue" "navblue" "lpblue" "linkblue" "teal" "green" "yella" "orange" "red" "plum" "mauve" "pink" "darkcyan" "softblue" "softgreen" "beige" "maroon" "darkred";
-$color-palette: $darkgray $titlegray $bodygray $lightgray $subduedgray $darkblue $navblue $lpblue $linkblue $teal $green $yella $orange $red $plum $mauve $pink $darkcyan $softblue $softgreen $beige $maroon $darkred;
+// $color-palette-names: "darkgray" "titlegray" "bodygray" "lightgray" "subduedgray" "darkblue" "navblue" "lpblue" "linkblue" "teal" "green" "yella" "orange" "red" "plum" "mauve" "pink" "darkcyan" "softblue" "softgreen" "beige" "maroon" "darkred";
+// $color-palette: $darkgray $titlegray $bodygray $lightgray $subduedgray $darkblue $navblue $lpblue $linkblue $teal $green $yella $orange $red $plum $mauve $pink $darkcyan $softblue $softgreen $beige $maroon $darkred;
 
 // Logical Theme Color:
 // =======================================================
@@ -108,8 +108,8 @@ $lightblue:              #00dffc !default;
 $green:                 #85ffc7 !default;
 $darkblue:              #091540 !default;
 $purple:                #796eff !default;
-$lightgray:             #c9d7f8 !default;
-$bodygray:              #646f79 !default;
+$lightgrey:             #c9d7f8 !default;
+$darkgrey:              #646f79 !default;
 
 // Social Network Colors
 // =======================================================
@@ -134,14 +134,13 @@ $social-network-colors: map-merge((
 // =======================================================
 $theme-colors: () !default;
 $theme-colors: map-merge((
-  "purple":             $purple,
   "blue":               $blue,
   "lightblue":          $lightblue,
   "green":              $green,
-  "darkblue"            $darkblue,
+  "darkblue":           $darkblue,
   "purple":             $purple,
   "lightgrey":          $lightgrey,
-  "bodygrey":           $bodygrey,
+  "darkgrey":           $darkgrey,
   "primary-soft":       $primary-soft,
   "white-soft":         $white-soft,
   "dark-soft":          $dark-soft,

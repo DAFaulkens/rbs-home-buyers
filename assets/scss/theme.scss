@@ -1,7 +1,7 @@
 // Bootstrap setup
 @import '../vendor/bootstrap/scss/functions';
 
-// Konectpal setup
+// Space setup
 @import 'space/variables';
 
 // Custom setup
@@ -19,5 +19,7 @@
 
 // Custom core
 @import 'user';
-@import 'konectpal/color-pallete.scss'
+
+// Konectpal color palette
+@import 'konectpal/variables/_variables';
 

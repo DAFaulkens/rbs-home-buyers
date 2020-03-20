@@ -1,10 +1,31 @@
 // user-variables.scss
-// Use this to overwrite Bootstrap and Space variables
+// Use this to overwrite Bootstrap and Konectpal variables
 //
 
 
-// Example of a variable override to change Space's primary color and font size
+// Example of a variable override to change Konectpal's primary color and font size
 // Remove the "//" comment and see it in action!
 
 // $primary: $danger;
 // $font-size-base: .875rem;
+
+// Logical Theme Color:
+// =======================================================
+$primary:               #85ffc7 !default;
+$primry-soft:           rgba($primary, .1) !default;
+$secondary:             #646f79 !default;
+$success:               #85ffc7 !default;
+$info:                  #00dffc !default;
+$warning:               #ffbc42 !default;
+$danger:                #da4b48 !default;
+$light:                 #f5f8fb !default;
+
+// Physical Theme Color
+// =======================================================
+$blue:                  #1c6be1 !default;
+$lightblue:              #00dffc !default;
+$green:                 #85ffc7 !default;
+$darkblue:              #091540 !default;
+$purple:                #796eff !default;
+$lightgrey:             #c9d7f8 !default;
+$darkgrey:              #646f79 !default;
