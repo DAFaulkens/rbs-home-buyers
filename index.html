@@ -2,11 +2,82 @@
 <html lang="en">
 <head>
     <!-- GitHub Pages Redirect from index.html -> html/home/index.html  -->
-    <meta http-equiv="refresh" content="0; url=https://fredsiika.github.io/konectpal/html/home/index.html" />
-    <title>Page Redirection | Konectpal Investments - Connecting Real Estate Buyers with Investors</title>
+    <meta http-equiv="refresh" content="1; url=https://fredsiika.github.io/konectpal/html/home/index.html" />
+    <title>We Buy Houses | Konectpal Invest - Connecting Real Estate Buyers with Investors</title>
+
+    <style>
+        :root {
+            --color-1: #6e40aa;
+            --color-2: #4c6edb;
+            --color-3: #24aad8;
+            --color-4: #1ac7c2;
+            --color-5: #1ddea3;
+        }
+        body {
+            background-color: #091540;
+            color: #c9d7f8;
+            text-align: center;
+        }
+        a {
+            color: #85ffc7;
+        }
+        .shape {
+            cy: 50;
+            r: 20;
+            animation: moveCircle 1250ms ease-in-out both infinite;
+        }
+        .shape:nth-child(1) {
+            cx: 60;
+            fill: var(--color-1);
+        }
+        .shape:nth-child(2) {
+            cx: 120;
+            fill: var(--color-2);
+            animation-delay: 100ms;
+        }
+        .shape:nth-child(3) {
+            cx: 180;
+            fill: var(--color-3);
+            animation-delay: 200ms;
+        }
+        .shape:nth-child(4) {
+            cx: 240;
+            fill: var(--color-4);
+            animation-delay: 300ms;
+        }
+        .shape:nth-child(5) {
+            cx: 300;
+            fill: var(--color-5);
+            animation-delay: 400ms;
+        }
+        @keyframes moveCircle {
+            50% {
+                cy: 150;
+                r: 13;
+            }
+        }
+    </style>
 </head>
 <body>
-    If you are not redirected automatically, 
-        please follow the <a href="https://fredsiika.github.io/konectpal/html/home/index.html">link to the documentation</a>
+    <div class="container">
+        <!-- Logo -->
+        <div class="u-header__navbar-brand-wrapper">
+          <a class="navbar-brand u-header_navbar-brand" href="https://konectpalinvest.com" aria-label="Konectpal">
+            <img class="u-header__navbar-brand-mobile" src="../../assets/svg/logos/logo.svg" alt="logo" style="width: 200px; max-width: 100%; height: 54px; max-height: 100%;">
+          </a>
+        </div>
+        <!-- End Logo -->
+        <h2 class="h1 text-white">Ready to sell your home?</h2>
+        <p class="lead text-white">If you are not redirected automatically, please follow the <a href="https://fredsiika.github.io/konectpal/html/home/index.html">link</a></p>
+        <!--   SVG Loading Circle Icons   -->
+        <svg width="350" height="250">
+          <circle class="shape" />
+          <circle class="shape" />
+          <circle class="shape" />
+          <circle class="shape" />
+          <circle class="shape" />
+        </svg>
+        <!--  End SVG Loading Circle Icons   -->
+      </div>
 </body>
 </html>
