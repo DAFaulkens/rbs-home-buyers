@@ -1,0 +1,20 @@
+{
+    "name": "Konectpal Invest",
+    "short_name": "Konectpal Invest",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png?v=2.0",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png?v=2.0",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#796eff",
+    "background_color": "#796eff",
+    "start_url": "https://konectpalinvest.com",
+    "display": "standalone"
+}
