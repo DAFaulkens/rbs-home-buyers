@@ -1,5 +1,9 @@
-# Konectpal Invest
+# Konectpal UI
 [![js-semistandard-style](https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg?style=flat-square)](https://github.com/standard/semistandard)
+
+A minimalist front-end design toolkit built with Bootstrap, JavaScript, jQuery and Node.js for developing responsive, browser-consistent web apps. Konectpal also provides helpful, browser-consistent styling for default HTML elements - buttons, forms, tables, lists, and typography.
+
+View Official UI documentation (Coming soon)
 
 ## Introduction
 
@@ -22,9 +26,9 @@ New features is constantly being developed. I'm currently refactoring code to ac
 
 This documentation will be updated once the new functionality is in production.
 
-### Getting Started
+### Download and Installation
 
-Get started with the Konectpal Invest Responsive Website Template for building any responsive, mobile-first sites, with Bootstrap and a template starter page. 
+Get started with the Konectpal UI.
 
 ### CSS
 
@@ -37,7 +41,7 @@ Copy-paste the **Bootstrap**, **FontAwesome** and then **Konectpal** stylesheets
 <!-- CSS Implementing Plugins -->
 <link rel="stylesheet" href="../../assets/vendor/font-awesome/css/fontawesome-all.min.css">
 
-<!-- CSS Space Template -->
+<!-- CSS Konectpal Template -->
 <link rel="stylesheet" href="../../assets/css/theme.css">
 ```
 
@@ -57,12 +61,18 @@ All Konectpal plugins start with `hs.` prefix.
 <script src="../../assets/vendor/popper.js/dist/umd/popper.min.js"></script>
 <script src="../../assets/vendor/bootstrap/bootstrap.min.js"></script>
 
-<!-- JS Space -->
+<!-- JS Konectpal -->
 <script src="../../assets/js/hs.core.js"></script>
 ```
 
-### Starter template
-Be sure to have your pages set up with the latest design and development standards. That means using an HTML5 doctype and including a viewport meta tag for proper responsive behaviors. Put it all together and your pages should look like this:
+### HTML Starter template
+Be sure to have your pages set up with the latest design and development standards. That means using an [HTML5 doctype](https://en.wikipedia.org/wiki/HTML5) that includes the following: 
+- Defines the website's [default language](http://www.w3schools.com/tags/ref_language_codes.asp) and [character set](https://en.wikipedia.org/wiki/UTF-8)
+- Defines the [viewport meta tag](https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag) for proper mobile responsive behavior.
+- **(Optional)** Loads the latest [Internet Explorer](https://msdn.microsoft.com/en-us/library/jj676915(v=vs.85).aspx) browser. 
+- Includes the Konectpal CSS, SASS and JavaScript files listed above.
+
+Put it all together and your pages should look like this:
 
 ```html
 <!doctype html>
@@ -102,33 +112,184 @@ Be sure to have your pages set up with the latest design and development standar
 </html>
 ```
 
-That's all you need for overall page requirements. Visit the [Bootstrap's Layout docs](https://getbootstrap.com/docs/4.1/layout/overview/) our official examples to start laying out your site's content and components.
+That's all you need for overall page requirements. 
 
-### Important globals 
 
-Konectpal employs a handful of important global styles and settings that you'll need to be aware of when using it, all of which are almost exclusively geared towards the _normalization_ of cross browser styles. Let's dive in.
+## Directory Structure
 
-HTML5 doctype 
-Space requires the use of the HTML5 doctype. Without it, you'll see some funky incomplete styling, but including it shouldn't cause any considerable hiccups.
+The project contains the source and destination folders, as well as a few necessary project files.
+- **dist** - the distribution folder that contains the final CSS, JavaScript, and HTML output.
+- **src** - the source folder that contains all the `scss` files and folders.
+- **.gitignore** - ignore `node_modules` and `.sass-cache` files.
+- **package.json** - npm package folder to initialize `node_modules`
 
-### HTML5 doctype
-Konectpal requires the use of the HTML5 doctype. Without it, you'll see some funky incomplete styling, but includingi it shouldn't cause any considerable hiccups.
+**Needs screenshot of file directory tree**
 
-```html
-<!doctype html>
-<html lang="en">
-  ...
-</html>
+## Main Sass File
+
+In the main Sass file, `main.scss`, we'll pull in the configuration (variables and mixins) first, followed by resets, then all the components.
+
+### Configuration
+
+Much of the design can be configured just by changing some settings in _variables.scss. This file will define your colors, typography, sizes, breakpoints, buttons, borders, and more. Define all your variables here to keep your project organized.
+
+```scss
+/*----------------------------------------------------------------------
+  * Konectpal Variables - Responsive Website Template version v1.0
+  * Copyright 2020 Fred Siika
+------------------------------------------------------------------------*/
+
+$root-path:             "../../";
+
+// Breakpoints
+// =======================================================
+
+$xs:                    0;
+$sm:                    576px;
+$md:                    768px;
+$lg:                    992px;
+$xl:                    1200px;
+
+$grid-breakpoints: (
+     xs:                 $xs,
+     sm:                 $sm,
+     md:                 $md,
+     lg:                 $lg,
+     xl:                 $xl
+ ) !default;
+
+// =======================================================
+// Color System
+// =======================================================
+
+// Stylelint-disable
+// =======================================================
+
+$white:                 #fff !default;
+$white-soft:            rgba($white, 0.1) !default;
+$dark:                  #151b26 !default;
+$dark-soft:             rgba($dark, .4) !default;
+$darker:                #181515 !default;
+$header-color:          #5a5757 !default;
+
+// Grays
+// =======================================================
+
+$gray-100:              #f5f8fb !default;
+$gray-150:              #bfc3ca !default;
+$gray-200:              #8f95a0 !default;
+$gray-300:              #e3e6f0 !default;
+$gray-400:              #d4d7dd !default;             
+$gray-600:              #8c98a4 !default;
+$gray-700:              #646f79 !default;
+
+// Gray Palettes
+// =======================================================
+
+$darkgrey                 : #2c3643 !default
+$titlegrey                : #3b444f !default
+$bodygrey                 : #67747c !default
+$lightgrey                : #99a9b3 !default
+$subduedgrey              : #dbe6ec !default
+
+// Primary Palette
+// =======================================================
+/* Coolors Exported Palette - coolors.co/85ffc7-091540-796eff-c9d7f8-646f79 */
+
+$green                     : #85ffc7 !default;
+$darkblue                  : #091540 !default;
+$purple                    : #796eff !default;
+$lightgrey                 : #c9d7f8 !default;
+$darkgrey                  : #646f79 !default;
+$teal                      : #0FDEBD !default;
+$yellow                    : #feef6d !default;
+$orange                    : #ffc83f !default;
+$red                       : #fa5e5b !default;
+$plum                      : #bf538d !default;
+
+// Secondary Palette
+// =======================================================
+$mauve                     : #684e79 !default;
+$pink                      : #ff708e !default;
+$darkcyan                  : #47a899 !default;
+$softblue                  : #8abee5 !default;
+$softgreen                 : #c7e6aa !default;
+$beige                     : #cfcbaf !default;
+$maroon                    : #582c2b !default;
+$darkred                   : #841e1b !default;
+
+
+// Color List
+// =======================================================
+
+$color-palette-names: "darkgray" "titlegray" "bodygray" "lightgray" "subduedgray" "darkblue" "navblue" "lpblue" "linkblue" "teal" "green" "yella" "orange" "red" "plum" "mauve" "pink" "darkcyan" "softblue" "softgreen" "beige" "maroon" "darkred";
+$color-palette: $darkgray $titlegray $bodygray $lightgray $subduedgray $darkblue $navblue $lpblue $linkblue $teal $green $yella $orange $red $plum $mauve $pink $darkcyan $softblue $softgreen $beige $maroon $darkred;
+
+// Logical Theme Color:
+// =======================================================
+$primary:               #85ffc7 !default;
+$primry-soft:           rgba($primary, .1) !default;
+$secondary:             #646f79 !default;
+$success:               #85ffc7 !default;
+$info:                  #00dffc !default;
+$warning:               #ffbc42 !default;
+$danger:                #da4b48 !default;
+$light:                 #f5f8fb !default;
+
+
+// Physical Theme Color
+// =======================================================
+$blue:                  #1c6be1 !default;
+$lightblue:              #00dffc !default;
+$green:                 #85ffc7 !default;
+$darkblue:              #091540 !default;
+$purple:                #796eff !default;
+$lightgrey:             #c9d7f8 !default;
+$darkgrey:              #646f79 !default;
+
+// Social Network Colors
+// =======================================================
+$facebook:              #3b5998 !default;
+$google:                #d14130 !default;
+$twitter:               #1da1f2 !default;
+$instagram:             #3f729b !default;
+$github:                #24292e !default;
+
+// Social Network Colors:
+// =======================================================
+$social-network-colors: () !default;
+$social-network-colors: map-merge((
+  "facebook":           $facebook,
+  "google":             $google,
+  "twitter":            $twitter,
+  "instagram":          $instagram,
+  "github":             $github
+), $social-network-colors);
+
+// Theme Colors
+// =======================================================
+$theme-colors: () !default;
+$theme-colors: map-merge((
+  "blue":               $blue,
+  "lightblue":          $lightblue,
+  "green":              $green,
+  "darkblue":           $darkblue,
+  "purple":             $purple,
+  "lightgrey":          $lightgrey,
+  "darkgrey":           $darkgrey,
+  "primary-soft":       $primary-soft,
+  "white-soft":         $white-soft,
+  "dark-soft":          $dark-soft,
+), $theme-colors);
+// Stylelint-enable
+
+
+// Custom Setup
+// =======================================================
+//@import "user-variables";
 ```
 
-### Responsive meta tag 
-Konectpal is developed _mobile first_, a strategy in which we optimize code for mobile devices first and then scale up components as necessary using CSS media queries. To ensure proper rendering and touch zooming for all devices, **add the responsive viewport meta tag** to your `<head>`.
-
-```html
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-```
-
-## File Structure
+Changing these default configurations will go a long way in setting the tone of the rest of your site.
 
 ## Quick Start
 
