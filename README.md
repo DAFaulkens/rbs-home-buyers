@@ -123,11 +123,70 @@ The project contains the source and destination folders, as well as a few necess
 - **.gitignore** - ignore `node_modules` and `.sass-cache` files.
 - **package.json** - npm package folder to initialize `node_modules`
 
-**Needs screenshot of file directory tree**
+Here is a very simple example of the directory tree structure which is vastly simplified.
+
+```bash
+dist/
+├── css/
+│   ├── main.css
+│   └── main.css.map
+├── js/
+│   └── script.js
+├── images/
+│   └── favicon.png
+├── index.html
+src/
+└── scss/
+    ├── base/
+    │   ├── _mixins.scss
+    │   ├── _normalize.scss
+    │   ├── _reset.scss
+    │   └── _variables.scss
+    └── components/
+        ├── _scaffolding.scss
+        ├── _grid.scss
+        ├── _helpers.scss
+        ├── _buttons.scss
+        ├── _forms.scss
+        ├── _tables.scss
+        ├── _navigation.scss
+        └── _layout.scss
+        main.scss
+.gitignore
+LICENSE.md
+README.md
+package-lock.json
+package.json
+```
 
 ## Main Sass File
 
-In the main Sass file, `main.scss`, we'll pull in the configuration (variables and mixins) first, followed by resets, then all the components.
+If you look at my source docs, my primary sass file is named `./assets/scss/theme.scss`. 
+For simplicity we'll creating a simple file called `./assets/scss/main.scss`.
+
+Now that we've created the main Sass file, `main.scss`, its time to we'll pull in the configuration (variables and mixins) first, followed by resets, then all the components.
+
+```scss
+// Configuration
+@import "base/variables";
+@import "base/mixins";
+
+// Reset
+@import "base/normalize";
+@import "base/reset";
+
+// Components
+@import "components/scaffolding";
+@import "components/grid";
+@import "components/helpers"; 
+@import "components/buttons";
+@import "components/forms";
+@import "components/tables";
+@import "components/navigation";
+@import "components/layout";
+```
+
+Most of the components should be self-explanatory. **Scaffolding** is the main styling of typography, links, headings, etc. **Navigation** and **layout** are empty files, but I kept them in because they're generally necessary. Add more files as necessary (3rd party, fonts, etc).
 
 ### Configuration
 
