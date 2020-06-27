@@ -1,26 +1,31 @@
 {
-  "_from": "typed.js@^2.0.6",
+  "_args": [
+    [
+      "typed.js@2.0.11",
+      "/Users/fredsiika/Projects/konectpal"
+    ]
+  ],
+  "_from": "typed.js@2.0.11",
   "_id": "typed.js@2.0.11",
   "_inBundle": false,
   "_integrity": "sha512-1ZORHalEyLob34q738mqmwp0pT6syMigB1SZuTItqdhovWBKFIt7I5uVALXAGQZCg2MCtihCt6uqkoqPJK+9iQ==",
   "_location": "/typed.js",
   "_phantomChildren": {},
   "_requested": {
-    "type": "range",
+    "type": "version",
     "registry": true,
-    "raw": "typed.js@^2.0.6",
+    "raw": "typed.js@2.0.11",
     "name": "typed.js",
     "escapedName": "typed.js",
-    "rawSpec": "^2.0.6",
+    "rawSpec": "2.0.11",
     "saveSpec": null,
-    "fetchSpec": "^2.0.6"
+    "fetchSpec": "2.0.11"
   },
   "_requiredBy": [
     "/"
   ],
   "_resolved": "https://registry.npmjs.org/typed.js/-/typed.js-2.0.11.tgz",
-  "_shasum": "d298a91f959f11a3803bf48b841a6fadd29640d9",
-  "_spec": "typed.js@^2.0.6",
+  "_spec": "2.0.11",
   "_where": "/Users/fredsiika/Projects/konectpal",
   "author": {
     "name": "Matt Boldt",
@@ -29,8 +34,6 @@
   "bugs": {
     "url": "https://github.com/mattboldt/typed.js/issues"
   },
-  "bundleDependencies": false,
-  "deprecated": false,
   "description": "A JavaScript Typing Animation Library",
   "devDependencies": {
     "babel": "^5.8.23",

@@ -1,26 +1,31 @@
 {
-  "_from": "custombox@^4.0.3",
+  "_args": [
+    [
+      "custombox@4.0.3",
+      "/Users/fredsiika/Projects/konectpal"
+    ]
+  ],
+  "_from": "custombox@4.0.3",
   "_id": "custombox@4.0.3",
   "_inBundle": false,
   "_integrity": "sha1-UIz4wHn6W1bZ0pBbJJ692BgC110=",
   "_location": "/custombox",
   "_phantomChildren": {},
   "_requested": {
-    "type": "range",
+    "type": "version",
     "registry": true,
-    "raw": "custombox@^4.0.3",
+    "raw": "custombox@4.0.3",
     "name": "custombox",
     "escapedName": "custombox",
-    "rawSpec": "^4.0.3",
+    "rawSpec": "4.0.3",
     "saveSpec": null,
-    "fetchSpec": "^4.0.3"
+    "fetchSpec": "4.0.3"
   },
   "_requiredBy": [
     "/"
   ],
   "_resolved": "https://registry.npmjs.org/custombox/-/custombox-4.0.3.tgz",
-  "_shasum": "508cf8c079fa5b56d9d2905b249ebdd81802d75d",
-  "_spec": "custombox@^4.0.3",
+  "_spec": "4.0.3",
   "_where": "/Users/fredsiika/Projects/konectpal",
   "author": {
     "name": "Julio de la Calle",
@@ -30,7 +35,6 @@
   "bugs": {
     "url": "https://github.com/dixso/custombox/issues"
   },
-  "bundleDependencies": false,
   "dependencies": {
     "babel-plugin-transform-object-assign": "^6.22.0",
     "babel-polyfill": "^6.23.0",
@@ -39,7 +43,6 @@
     "es6-promise": "^4.1.0",
     "fullscreen-api-polyfill": "^1.1.2"
   },
-  "deprecated": false,
   "description": "Modal dialog effects with transitions CSS3",
   "devDependencies": {
     "@types/core-js": "^0.9.41",

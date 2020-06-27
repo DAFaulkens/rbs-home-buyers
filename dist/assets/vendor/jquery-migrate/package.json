@@ -1,26 +1,31 @@
 {
-  "_from": "jquery-migrate@^3.0.1",
+  "_args": [
+    [
+      "jquery-migrate@3.1.0",
+      "/Users/fredsiika/Projects/konectpal"
+    ]
+  ],
+  "_from": "jquery-migrate@3.1.0",
   "_id": "jquery-migrate@3.1.0",
   "_inBundle": false,
   "_integrity": "sha512-u/MtE1ST2pCr3rCyouJG2xMiw/k3OzLNeRKprjKTeHUezCGr0DyEgeXFdqFLmQfxfR5EsVu+mGo/sCcYdiYcIQ==",
   "_location": "/jquery-migrate",
   "_phantomChildren": {},
   "_requested": {
-    "type": "range",
+    "type": "version",
     "registry": true,
-    "raw": "jquery-migrate@^3.0.1",
+    "raw": "jquery-migrate@3.1.0",
     "name": "jquery-migrate",
     "escapedName": "jquery-migrate",
-    "rawSpec": "^3.0.1",
+    "rawSpec": "3.1.0",
     "saveSpec": null,
-    "fetchSpec": "^3.0.1"
+    "fetchSpec": "3.1.0"
   },
   "_requiredBy": [
     "/"
   ],
   "_resolved": "https://registry.npmjs.org/jquery-migrate/-/jquery-migrate-3.1.0.tgz",
-  "_shasum": "8158de74cca39fb7fc2635db570151ae7ce3ddea",
-  "_spec": "jquery-migrate@^3.0.1",
+  "_spec": "3.1.0",
   "_where": "/Users/fredsiika/Projects/konectpal",
   "author": {
     "name": "OpenJS Foundation and other contributors",
@@ -29,7 +34,6 @@
   "bugs": {
     "url": "http://bugs.jquery.com/"
   },
-  "bundleDependencies": false,
   "commitplease": {
     "components": [
       "Docs",
@@ -56,7 +60,6 @@
       "Wrap"
     ]
   },
-  "deprecated": false,
   "description": "Migrate older jQuery code to jQuery 3.0+",
   "devDependencies": {
     "chalk": "2.4.2",
