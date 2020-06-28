@@ -124,11 +124,11 @@
 
 					<!-- Responsive Toggle Button -->
 					<button type="button" class="navbar-toggler btn u-hamburger u-header__hamburger"
-									aria-label="Toggle navigation"
-									aria-expanded="false"
-									aria-controls="navBar"
-									data-toggle="collapse"
-									data-target="#navBar">
+							aria-label="Toggle navigation"
+							aria-expanded="false"
+							aria-controls="navBar"
+							data-toggle="collapse"
+							data-target="#navBar">
 						<span class="d-none d-sm-inline-block text-dark">Menu</span>
 						<span id="hamburgerTrigger" class="u-hamburger__box ml-3">
 							<span class="u-hamburger__inner"></span>
@@ -141,37 +141,96 @@
 						<ul class="navbar-nav u-header__navbar-nav">
 							<!-- Home -->
 							<li class="nav-item u-header__nav-item">
-								<a class="nav-link u-header__nav-link" href="#we-buy-houses">We Buy Houses</a>
+								<a class="nav-link u-header__nav-link 
+								js-go-to"
+								href="#home"
+								data-target="#home"
+								data-is-referenced-to-page="true"
+								data-type="static"
+								data-show-effect="slideInUp"
+								data-hide-effect="slideOutDown">Home</a>
 							</li>
 							<!-- End Home -->
 
 							<!-- Challenges -->
 							<li class="nav-item u-header__nav-item">
-								<a class="nav-link u-header__nav-link" href="#challenges">Challenges</a>
+								<a class="nav-link u-header__nav-link
+								js-go-to"
+								href="#challenges"
+								data-target="#challenges"
+								data-is-referenced-to-page="true"
+								data-type="static"
+								data-show-effect="slideInUp"
+								data-hide-effect="slideOutDown">Challenges</a>
 							</li>
 							<!-- End Challenges -->
 
+							<!-- Benefits -->
+							<li class="nav-item u-header__nav-item">
+								<a class="nav-link u-header__nav-link
+								js-go-to"
+								href="#benefits"
+								data-target="#benefits"
+								data-is-referenced-to-page="true"
+								data-type="static"
+								data-show-effect="slideInUp"
+								data-hide-effect="slideOutDown">Benefits</a>
+							</li>
+							<!-- End Benefits -->
+
 							<!-- How It Works -->
 							<li class="nav-item u-header__nav-item">
-								<a class="nav-link u-header__nav-link" href="#how-it-works">How It Works</a>
+								<a class="nav-link u-header__nav-link
+								js-go-to"
+								href="#how-it-works"
+								data-target="#how-it-works"
+								data-type="#how-it-works"
+								data-is-referenced-to-page="true"
+								data-type="static"
+								data-show-effect="slideInUp"
+								data-hide-effect="slideOutDown">How It Works</a>
 							</li>
 							<!-- End How It Works  -->
 							
 							<!-- Solutions -->
 							<li class="nav-item u-header__nav-item">
-								<a class="nav-link u-header__nav-link" href="#solutions">Solutions</a>   
+								<a class="nav-link u-header__nav-link
+								js-go-to"
+								href="#solutions"
+								data-target="#solutions"
+								data-type="#solutions"
+								data-is-referenced-to-page="true"
+								data-type="static"
+								data-show-effect="slideInUp"
+								data-hide-effect="slideOutDown">Solutions</a>   
 							</li>
 							<!-- End Solutions  -->
 
 							<!-- Contact Us -->
 							<li class="nav-item u-header__nav-item">
-								<a class="nav-link u-header__nav-link" href="#contact">Contact Us</a>
+								<a class="nav-link u-header__nav-link
+								js-go-to"
+								href="#contact"
+								data-target="#contact"
+								data-type="#contact"
+								data-is-referenced-to-page="true"
+								data-type="static"
+								data-show-effect="slideInUp"
+								data-hide-effect="slideOutDown">Contact Us</a>
 							</li>
 							<!-- End Contact Us -->
 
 							<!-- Button CTA -->
 							<li class="nav-item u-header__nav-item-btn">
-								<a class="btn btn-sm btn-outline-primary" href="#get-started">Get Started</a>
+								<a class="btn btn-sm btn-outline-primary
+								js-go-to"
+								href="#cta-sign-up"
+								data-target="#cta-sign-up"
+								data-type="#cta-sign-up"
+								data-is-referenced-to-page="true"
+								data-type="static"
+								data-show-effect="slideInUp"
+								data-hide-effect="slideOutDown">Get Started</a>
 							</li>
 							<!-- End Button CTA -->
 						</ul>
@@ -186,159 +245,159 @@
 
 	<!-- ========== MAIN CONTENT ========== -->
 	<main id="content" class="navbarScroll" data-spy="scroll" data-target="#navbarScroll" data-offset="0">
-	
-			<!-- Hero Section -->
-			<div class="gradient-overlay-dark-v1 bg-img-hero" style="background-image: url(../../assets/img/demo/real-estate/jumbotron.jpg);">
-				<div class="container space-2 space-3-top--lg">
-					<div class="row justify-content-lg-between align-items-md-center">
-						<!-- Heading and description -->
-						<div class="col-md-6 col-lg-5 mb-9 mb-md-0">
-							<h2 id="we-buy-houses" class="display-4 text-white font-size-48--md-down mb-3">Looking to sell your property?</h2>
-							<div class="mb-5">
-								<p class="lead mb-3 text-white text-lh-sm"><b>We'll buy your house in cash.</b><br class="d-inline-block"> Don't worry about repairs or listing fees. Upload your property information and review cash offers today.</p>
-								
-								<div class="">
-									<a class="w-25 js-go-to u-go-to bg-transparent" href="#challenges"
-									data-target="#challenges"
-									data-is-referenced-to-page="true"
-									data-type="static"
-									data-show-effect="slideInUp"
-									data-hide-effect="slideOutDown">
-									<span class="d-none fas fa-arrow-down u-go-to__inner"></span>
-									<input class="btn btn-outline-purple" type="button" value="Learn More" />
-									</a>
+		<!-- Hero Section -->
+		<div class="gradient-overlay-dark-v1 bg-img-hero" style="background-image: url(../../assets/img/demo/real-estate/jumbotron.jpg);">
+			<div class="container space-2 space-3-top--lg">
+				<div class="row justify-content-lg-between align-items-md-center">
+					<!-- Heading and description -->
+					<div class="col-md-6 col-lg-5 mb-9 mb-md-0">
+						<h2 id="home" class="display-4 text-white font-size-48--md-down mb-3">Looking to sell your property?</h2>
+						<div class="mb-5">
+							<p class="lead mb-3 text-white text-lh-sm"><b>We'll buy your house in cash.</b><br class="d-inline-block"> Don't worry about repairs or listing fees. Upload your property information and review cash offers today.</p>
+							
+							<div class="">
+								<a class="w-25 js-go-to u-go-to bg-transparent" href="#challenges"
+								data-target="#challenges"
+								data-is-referenced-to-page="true"
+								data-type="static"
+								data-show-effect="slideInUp"
+								data-hide-effect="slideOutDown">
+								<span class="d-none fas fa-arrow-down u-go-to__inner"></span>
+								<input class="btn btn-outline-purple" type="button" value="Learn More" />
+								</a>
 
-									<!-- <a class="js-go-to u-go-to " href="#get-started"
-									data-target="#get-started"
-									data-is-referenced-to-page="true"
-									data-type="static"
-									data-show-effect="slideInUp"
-									data-hide-effect="slideOutDown">
-									<span class="d-none fas fa-arrow-down u-go-to__inner"></span>
-									<input class="btn btn-success" type="button" value="Get Cash Offer" />
-									</a> -->
-								</div>
+								<!-- <a class="js-go-to u-go-to " href="#get-started"
+								data-target="#get-started"
+								data-is-referenced-to-page="true"
+								data-type="static"
+								data-show-effect="slideInUp"
+								data-hide-effect="slideOutDown">
+								<span class="d-none fas fa-arrow-down u-go-to__inner"></span>
+								<input class="btn btn-success" type="button" value="Get Cash Offer" />
+								</a> -->
 							</div>
-							<!-- Divider -->
-							<div class="w-25">
-								<hr class="my-6">
-							</div>
-							<!-- End Divider -->
 						</div>
-						<!-- End Heading and description -->
+						<!-- Divider -->
+						<div class="w-25">
+							<hr class="my-6">
+						</div>
+						<!-- End Divider -->
+					</div>
+					<!-- End Heading and description -->
 
-						<script type="text/javascript">var submitted="false;"</script>
+					<!-- <script type="text/javascript">var submitted="false;"</script> -->
 
-						<!-- Update the URL for the thank you page on form submit -->
-						<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
-							onsubmit="if(submitted) {window.location='https:\/\/konectpalinvest.com/thankyou/';}">
-						</iframe>
+					<!-- Update the URL for the thank you page on form submit -->
+					<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
+						onsubmit="if(submitted) {window.location='https:\/\/konectpalinvest.com/thankyou/';}">
+					</iframe>
 
-						<!-- Heading CTA -->
-						<div class="col-md-6 col-lg-5">    
-							<!-- Signup Form -->
-							<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScjQBvdEmOysGAQbalLibfXiwDgqyrBGYLrqZcrSKe9-OoKiw/formResponse" target="_self" method="POST" id="get-started" class="js-validate" novalidate="">
-								<!-- Signup -->
-								<div id="heroSignup" data-target-group="idHeroSignupForm">
-									<div class="card shadow-sm mb-4">
-										<div class="card-body p-5">
-											<h2 class="h6 text-muted font-weight-medium text-uppercase mb-3">Get started</h2>
-											
-											<!-- First Name -->
-											<div class="js-form-message mb-3">
-												<div class="js-focus-state input-group input-group form">
-													<div class="input-group-prepend form__prepend">
-														<span class="input-group-text form__text">
-															<i class="fa fa-user form__text-inner"></i>
-														</span>
-													</div>
-													<input id="get-started" type="text" class="form-control form__input" name="entry.1035101015" required="" placeholder="First Name" aria-label="First Name">
+					<!-- Heading CTA -->
+					<div class="col-md-6 col-lg-5">    
+						<!-- Signup Form -->
+						<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScjQBvdEmOysGAQbalLibfXiwDgqyrBGYLrqZcrSKe9-OoKiw/formResponse" target="_self" method="POST" id="get-started" class="js-validate" novalidate="">
+							<!-- Signup -->
+							<div id="heroSignup" data-target-group="idHeroSignupForm">
+								<div class="card shadow-sm mb-4">
+									<div class="card-body p-5">
+										<h2 class="h6 text-muted font-weight-medium text-uppercase mb-3">Get started</h2>
+										
+										<!-- First Name -->
+										<div class="js-form-message mb-3">
+											<div class="js-focus-state input-group input-group form">
+												<div class="input-group-prepend form__prepend">
+													<span class="input-group-text form__text">
+														<i class="fa fa-user form__text-inner"></i>
+													</span>
 												</div>
+												<input id="cta-sign-up" type="text" class="form-control form__input" name="entry.1035101015" required="" placeholder="First Name" aria-label="First Name">
 											</div>
-											<!-- End First Name -->
-
-											<!-- Last Name -->
-											<div class="js-form-message mb-3">
-												<div class="js-focus-state input-group input-group form">
-													<div class="input-group-prepend form__prepend">
-														<span class="input-group-text form__text">
-															<i class="fa fa-user form__text-inner"></i>
-														</span>
-													</div>
-													<input type="text" class="form-control form__input" name="entry.2119446046" required="" placeholder="Last Name" aria-label="Last Name">
-												</div>
-											</div>
-											<!-- End Last Name Input -->
-
-											<!-- Email Input -->
-											<div class="js-form-message mb-3">
-												<div class="js-focus-state input-group input-group form">
-													<div class="input-group-prepend form__prepend">
-														<span class="input-group-text form__text">
-															<i class="fa fa-envelope form__text-inner"></i>
-														</span>
-													</div>
-													<input type="email" class="form-control form__input" name="entry.774377731" required="" placeholder="Enter your email" aria-label="Enter your email" data-msg="Please enter a valid email address." data-error-class="u-has-error" data-success-class="u-has-success">
-												</div>
-											</div>
-											<!-- End Email Input -->
-
-											<!-- Phone Number Input -->
-											<div class="js-form-message mb-3">
-												<div class="js-focus-state input-group input-group form">
-													<div class="input-group-prepend form__prepend">
-														<span class="input-group-text form__text">
-															<i class="fa fa-phone form__text-inner"></i>
-														</span>
-													</div>
-													<input type="tel" class="form-control form__input" name="entry.1306679765" required="" placeholder="Enter mobile number" aria-label="Enter mobile number" data-msg="Please enter a valid phone number." data-error-class="u-has-error" data-success-class="u-has-success" >
-												</div>
-											</div>
-											<!-- End Phone Number Input -->
-
-											<!-- How Can We Help You? -->
-											<div class="js-form-message mb-3">
-												<div class="js-focus state input-group input-group form">
-													<div class="input-group-prepend form_prepend">
-														<span class="input-group-text form_text">
-															<i class="fas fa-comment-alt"></i>
-														</span>
-													</div>
-													<label class="h6 small d-inline-flex text-uppercase" for="formControlSelect1" name="entry.1630044437"></label>
-													<select class="form-control text-muted" id="formControlSelect1">
-														<option>How Can We help You?</option>
-														<option>Schedule a call or meeting</option>
-														<option>I need immediate assistance</option>
-														<option>Other</option>
-													</select>
-												</div>
-											</div>
-											<!-- End How Can We Help You -->
-
-											<!-- Form Disclaimer -->
-											<small class="form-text text-muted">By signing up, I agree to the <a href="../pages/terms.html">Terms of Service </a>and <a href="../pages/privacy.html">Privacy Policy </a>and expressly agree to receive Konectpal Invest marketing emails and texts. Message and Data Rates may apply.</small>
-											<!-- End Form Disclaimer -->
-											
-											<!-- Form break -->
-											<hr class="my-4">
-
-											<!-- Button -->
-											<button type="submit" class="btn btn-block btn-primary">Get a Cash Offer</button>
-											<!-- End Button -->
 										</div>
+										<!-- End First Name -->
+
+										<!-- Last Name -->
+										<div class="js-form-message mb-3">
+											<div class="js-focus-state input-group input-group form">
+												<div class="input-group-prepend form__prepend">
+													<span class="input-group-text form__text">
+														<i class="fa fa-user form__text-inner"></i>
+													</span>
+												</div>
+												<input type="text" class="form-control form__input" name="entry.2119446046" required="" placeholder="Last Name" aria-label="Last Name">
+											</div>
+										</div>
+										<!-- End Last Name Input -->
+
+										<!-- Email Input -->
+										<div class="js-form-message mb-3">
+											<div class="js-focus-state input-group input-group form">
+												<div class="input-group-prepend form__prepend">
+													<span class="input-group-text form__text">
+														<i class="fa fa-envelope form__text-inner"></i>
+													</span>
+												</div>
+												<input type="email" class="form-control form__input" name="entry.774377731" required="" placeholder="Enter your email" aria-label="Enter your email" data-msg="Please enter a valid email address." data-error-class="u-has-error" data-success-class="u-has-success">
+											</div>
+										</div>
+										<!-- End Email Input -->
+
+										<!-- Phone Number Input -->
+										<div class="js-form-message mb-3">
+											<div class="js-focus-state input-group input-group form">
+												<div class="input-group-prepend form__prepend">
+													<span class="input-group-text form__text">
+														<i class="fa fa-phone form__text-inner"></i>
+													</span>
+												</div>
+												<input type="tel" class="form-control form__input" name="entry.1306679765" required="" placeholder="Enter mobile number" aria-label="Enter mobile number" data-msg="Please enter a valid phone number." data-error-class="u-has-error" data-success-class="u-has-success" >
+											</div>
+										</div>
+										<!-- End Phone Number Input -->
+
+										<!-- How Can We Help You? -->
+										<div class="js-form-message mb-3">
+											<div class="js-focus state input-group input-group form">
+												<div class="input-group-prepend form_prepend">
+													<span class="input-group-text form_text">
+														<i class="fas fa-comment-alt"></i>
+													</span>
+												</div>
+												<label class="h6 small d-inline-flex text-uppercase" for="formControlSelect1" name="entry.1630044437"></label>
+												<select class="form-control text-muted" id="formControlSelect1">
+													<option>How Can We help You?</option>
+													<option>Schedule a call or meeting</option>
+													<option>I need immediate assistance</option>
+													<option>Other</option>
+												</select>
+											</div>
+										</div>
+										<!-- End How Can We Help You -->
+
+										<!-- Form Disclaimer -->
+										<small class="form-text text-muted">By signing up, I agree to the <a href="../pages/terms.html">Terms of Service </a>and <a href="../pages/privacy.html">Privacy Policy </a>and expressly agree to receive Konectpal Invest marketing emails and texts. Message and Data Rates may apply.</small>
+										<!-- End Form Disclaimer -->
+										
+										<!-- Form break -->
+										<hr class="my-4">
+
+										<!-- Button -->
+										<button type="submit" class="btn btn-block btn-primary">Get a Cash Offer</button>
+										<!-- End Button -->
 									</div>
 								</div>
-								<!-- End Signup -->         
-							</form>
-							<!-- End Signup Form -->
-						</div>
-						<!-- End Heading CTA -->
+							</div>
+							<!-- End Signup -->         
+						</form>
+						<!-- End Signup Form -->
 					</div>
+					<!-- End Heading CTA -->
 				</div>
 			</div>
-			<!-- End Hero Section -->
+		</div>
+		<!-- End Hero Section -->
 		
-			<!-- Challenges Section -->
+		<!-- Challenges Section -->
+		<article>
 			<div class="bg-gray-100">
 				<div id="challenges" class="container space-2-top space-3-top--lg">
 					<!-- Title -->
@@ -370,46 +429,52 @@
 						</div>
 					</div>
 				</div>
-			</div>					
-			<!-- End Challenges Section -->
-
-			<!-- Divider -->
-			<div class="text-center u-divider-wrapper my-3">
-				<span class="u-divider u-divider--xs u-divider--text">
-					<!-- icon navigation down-arrow -->
-					<i class="svg-icon svg-icon-sm text-purple">
-						<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-							<g id="Stockholm-icons-/-Navigation-/-Angle-double-down" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-								<polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
-								<path d="M8.2928955,3.20710089 C7.90237121,2.8165766 7.90237121,2.18341162 8.2928955,1.79288733 C8.6834198,1.40236304 9.31658478,1.40236304 9.70710907,1.79288733 L15.7071091,7.79288733 C16.085688,8.17146626 16.0989336,8.7810527 15.7371564,9.17571874 L10.2371564,15.1757187 C9.86396402,15.5828377 9.23139665,15.6103407 8.82427766,15.2371482 C8.41715867,14.8639558 8.38965574,14.2313885 8.76284815,13.8242695 L13.6158645,8.53006986 L8.2928955,3.20710089 Z" id="Path-94" fill="#000000" transform="translate(12.000003, 8.499997) scale(-1, -1) rotate(-90.000000) translate(-12.000003, -8.499997) "></path>
-								<path d="M6.70710678,19.2071045 C6.31658249,19.5976288 5.68341751,19.5976288 5.29289322,19.2071045 C4.90236893,18.8165802 4.90236893,18.1834152 5.29289322,17.7928909 L11.2928932,11.7928909 C11.6714722,11.414312 12.2810586,11.4010664 12.6757246,11.7628436 L18.6757246,17.2628436 C19.0828436,17.636036 19.1103465,18.2686034 18.7371541,18.6757223 C18.3639617,19.0828413 17.7313944,19.1103443 17.3242754,18.7371519 L12.0300757,13.8841355 L6.70710678,19.2071045 Z" id="Path-94" fill="#000000" opacity="0.3" transform="translate(12.000003, 15.499997) scale(-1, -1) rotate(-360.000000) translate(-12.000003, -15.499997) "></path>
-							</g>
-						</svg>
-					</i>
-				</span>
 			</div>
-			<!-- End Divider -->
+		</article>					
+		<!-- End Challenges Section -->
 
-			<!-- Benefit Section -->
-			<div class="bg-gray-100">
+		<!-- Divider -->
+		<div class="text-center u-divider-wrapper my-3">
+			<span class="u-divider u-divider--xs u-divider--text">
+				<!-- icon navigation down-arrow -->
+				<i class="svg-icon svg-icon-sm text-purple">
+					<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<g id="Stockholm-icons-/-Navigation-/-Angle-double-down" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							<polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+							<path d="M8.2928955,3.20710089 C7.90237121,2.8165766 7.90237121,2.18341162 8.2928955,1.79288733 C8.6834198,1.40236304 9.31658478,1.40236304 9.70710907,1.79288733 L15.7071091,7.79288733 C16.085688,8.17146626 16.0989336,8.7810527 15.7371564,9.17571874 L10.2371564,15.1757187 C9.86396402,15.5828377 9.23139665,15.6103407 8.82427766,15.2371482 C8.41715867,14.8639558 8.38965574,14.2313885 8.76284815,13.8242695 L13.6158645,8.53006986 L8.2928955,3.20710089 Z" id="Path-94" fill="#000000" transform="translate(12.000003, 8.499997) scale(-1, -1) rotate(-90.000000) translate(-12.000003, -8.499997) "></path>
+							<path d="M6.70710678,19.2071045 C6.31658249,19.5976288 5.68341751,19.5976288 5.29289322,19.2071045 C4.90236893,18.8165802 4.90236893,18.1834152 5.29289322,17.7928909 L11.2928932,11.7928909 C11.6714722,11.414312 12.2810586,11.4010664 12.6757246,11.7628436 L18.6757246,17.2628436 C19.0828436,17.636036 19.1103465,18.2686034 18.7371541,18.6757223 C18.3639617,19.0828413 17.7313944,19.1103443 17.3242754,18.7371519 L12.0300757,13.8841355 L6.70710678,19.2071045 Z" id="Path-94" fill="#000000" opacity="0.3" transform="translate(12.000003, 15.499997) scale(-1, -1) rotate(-360.000000) translate(-12.000003, -15.499997) "></path>
+						</g>
+					</svg>
+				</i>
+			</span>
+		</div>
+		<!-- End Divider -->
+
+		<!-- Benefit Section -->
+		<article>
+			<div class="bg-gray-400">
 				<div id="benefits" class="container space-2-top space-3-top--lg">
 					<!-- Title -->
 					<div class="w-md-80 w-lg-60 text-center mx-md-auto mb-9">
 						<div class="mb-5">
 							<span class="u-label u-label--sm u-label--purple mb-3">Benefits</span>
-							<h2 class="h3">Sell your home with certainty, speed, and transparency.</h2>
-							<p class="">We are improving the process of buying and selling properties by working directly with homeowners.</p>
+							<h2 class="h3 animated infinite fadeinUp"
+							data-animation="fadeInUp"
+							data-animation-delay="800"
+							data-animation-duration="1500">Sell your home with certainty, speed, and transparency.</h2>
+							<p class="animated infinite fadeinUp">We are improving the process of buying and selling properties by working directly with homeowners.</p>
 						</div>
 					</div>
 					<!-- End title -->
-
+	
 					<div class="row justify-content-md-between align-items-md-center">
-						<div class="col-md-6 order-md-2 mb-9 mb-md-0">
+						<!-- <div class="col-md-6 order-md-2 mb-9 mb-md-0">
 							<div class="px-lg-5">
 								<object type="image/svg+xml" data="../../assets/svg/mockups/phone-mockup-3.svg"></object>
 							</div>
-						</div>
-
+						</div> -->
+	
+						<!-- Benefits List Colum 1 -->
 						<div class="col-md order-md-1">
 							<!-- Icon Block -->
 							<div class="mb-7">
@@ -418,7 +483,7 @@
 								<p>Selling to us means cutting out the middleman.</p>
 							</div>
 							<!-- End Icon Block -->
-
+	
 							<!-- Icon Block -->
 							<div class="mb-7 mb-md-0">
 								<img class="max-width-9 mb-2" src="../../assets/svg/components/money-purple-icon.svg" alt="Image Description">
@@ -427,7 +492,9 @@
 							</div>
 							<!-- End Icon Block -->
 						</div>
-
+						<!-- End Benefits List Colum 1 -->
+	
+						<!-- Benefits List Colum 2 -->
 						<div class="col-md order-md-3">
 							<!-- Icon Block -->
 							<div class="mb-7">
@@ -436,7 +503,7 @@
 								<p>Your time is valuable so we let you choose your own closing date.</p>
 							</div>
 							<!-- End Icon Block -->
-
+	
 							<!-- Icon Block -->
 							<div>
 								<img class="max-width-9 mb-2" src="../../assets/svg/components/moving-up-brown-icon.svg" alt="Image Description">
@@ -445,30 +512,32 @@
 							</div>
 							<!-- End Icon Block -->
 						</div>
+						<!-- End Benefits List Colum 2 -->
 					</div>
-
 				</div>
 			</div>
-			<!-- End Benefit Section-->
+		</article>
+		<!-- End Benefit Section-->
 
-			<!-- Divider -->
-			<div class="text-center u-divider-wrapper my-3">
-				<span class="u-divider u-divider--xs u-divider--text">
-					<!-- icon navigation down-arrow -->
-					<i class="svg-icon svg-icon-sm text-purple">
-						<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-							<g id="Stockholm-icons-/-Navigation-/-Angle-double-down" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-								<polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
-								<path d="M8.2928955,3.20710089 C7.90237121,2.8165766 7.90237121,2.18341162 8.2928955,1.79288733 C8.6834198,1.40236304 9.31658478,1.40236304 9.70710907,1.79288733 L15.7071091,7.79288733 C16.085688,8.17146626 16.0989336,8.7810527 15.7371564,9.17571874 L10.2371564,15.1757187 C9.86396402,15.5828377 9.23139665,15.6103407 8.82427766,15.2371482 C8.41715867,14.8639558 8.38965574,14.2313885 8.76284815,13.8242695 L13.6158645,8.53006986 L8.2928955,3.20710089 Z" id="Path-94" fill="#000000" transform="translate(12.000003, 8.499997) scale(-1, -1) rotate(-90.000000) translate(-12.000003, -8.499997) "></path>
-								<path d="M6.70710678,19.2071045 C6.31658249,19.5976288 5.68341751,19.5976288 5.29289322,19.2071045 C4.90236893,18.8165802 4.90236893,18.1834152 5.29289322,17.7928909 L11.2928932,11.7928909 C11.6714722,11.414312 12.2810586,11.4010664 12.6757246,11.7628436 L18.6757246,17.2628436 C19.0828436,17.636036 19.1103465,18.2686034 18.7371541,18.6757223 C18.3639617,19.0828413 17.7313944,19.1103443 17.3242754,18.7371519 L12.0300757,13.8841355 L6.70710678,19.2071045 Z" id="Path-94" fill="#000000" opacity="0.3" transform="translate(12.000003, 15.499997) scale(-1, -1) rotate(-360.000000) translate(-12.000003, -15.499997) "></path>
-							</g>
-						</svg>
-					</i>
-				</span>
-			</div>
-			<!-- End Divider -->
+		<!-- Divider -->
+		<div class="text-center u-divider-wrapper my-3">
+			<span class="u-divider u-divider--xs u-divider--text">
+				<!-- icon navigation down-arrow -->
+				<i class="svg-icon svg-icon-sm text-purple">
+					<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<g id="Stockholm-icons-/-Navigation-/-Angle-double-down" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							<polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+							<path d="M8.2928955,3.20710089 C7.90237121,2.8165766 7.90237121,2.18341162 8.2928955,1.79288733 C8.6834198,1.40236304 9.31658478,1.40236304 9.70710907,1.79288733 L15.7071091,7.79288733 C16.085688,8.17146626 16.0989336,8.7810527 15.7371564,9.17571874 L10.2371564,15.1757187 C9.86396402,15.5828377 9.23139665,15.6103407 8.82427766,15.2371482 C8.41715867,14.8639558 8.38965574,14.2313885 8.76284815,13.8242695 L13.6158645,8.53006986 L8.2928955,3.20710089 Z" id="Path-94" fill="#000000" transform="translate(12.000003, 8.499997) scale(-1, -1) rotate(-90.000000) translate(-12.000003, -8.499997) "></path>
+							<path d="M6.70710678,19.2071045 C6.31658249,19.5976288 5.68341751,19.5976288 5.29289322,19.2071045 C4.90236893,18.8165802 4.90236893,18.1834152 5.29289322,17.7928909 L11.2928932,11.7928909 C11.6714722,11.414312 12.2810586,11.4010664 12.6757246,11.7628436 L18.6757246,17.2628436 C19.0828436,17.636036 19.1103465,18.2686034 18.7371541,18.6757223 C18.3639617,19.0828413 17.7313944,19.1103443 17.3242754,18.7371519 L12.0300757,13.8841355 L6.70710678,19.2071045 Z" id="Path-94" fill="#000000" opacity="0.3" transform="translate(12.000003, 15.499997) scale(-1, -1) rotate(-360.000000) translate(-12.000003, -15.499997) "></path>
+						</g>
+					</svg>
+				</i>
+			</span>
+		</div>
+		<!-- End Divider -->
 
-			<!-- Process - How it works -->
+		<!-- Process - How it works -->
+		<article>
 			<div id="how-it-works" class="space-2 space-3--lg gradient-overlay-quarter-light-v1">
 				<div class="container">
 					<!-- Title -->
@@ -478,7 +547,7 @@
 						<h6 class="text-uppercase text-gray-700 font-weight-medium letter-spacing-0_06 mb-3">In three simple steps.</h6>
 					</div>
 					<!-- End Title -->
-
+	
 					<!-- Wizard -->
 					<div class="js-wizard wizard" data-wizard-steps="#wizardSteps" data-wizard-content="#wizardContent">
 						<!-- Wizard Steps -->
@@ -527,8 +596,6 @@
 							</div>
 	
 							<div id="selectStepTwo" class="row align-items-center" style="display: none;">
-
-	
 								<div class="col-md-6 pl-lg-9">
 									<h2 class="text-lh-xs mb-4">Visit Your Home</h2>
 									<p class="lead text-purple">The devils in the details</p>
@@ -545,7 +612,7 @@
 									<h2 class="text-lh-xs mb-4">Let's make a deal</h2>
 									<p class="lead text-purple">It's time to review offers.</p>
 									<p class="mb-7">Buying your property is our top priority. Konectpal Invest will extend a competitive cash offer for your property. Don’t worry about legal paperwork, third-party approvals or closing costs, we take care of everything for you.</p>
-									<a class="btn btn-sm btn-purple mr-3" href="#">Get Started</a>
+									<a class="btn btn-sm btn-purple mr-3" href="#cta-sign-up">Get Started</a>
 								</div>
 							</div>
 						</div>
@@ -554,9 +621,11 @@
 					<!-- End Wizard -->
 				</div>
 			</div>
-			<!-- End Process - How it works -->
+		</article>
+		<!-- End Process - How it works -->
 
-			<!-- Solution (How we're different) -->
+		<!-- Solution (How we're different) -->
+		<article>
 			<div id="solutions" class="space-2  overflow-hidden bg-dark">
 				<div class="container">
 					<div class="row no-gutters align-items-center">
@@ -581,7 +650,7 @@
 										<p class="mb-0 text-white">Our access to private financing facilitated 15MM+ in property investments last year.</p>
 									</div>
 								</li>
-
+	
 								<!-- List item 2 -->
 								<li class="d-flex align-items-start mb-5">
 									<div class="mt-2">
@@ -613,11 +682,14 @@
 					</div>
 				</div>
 			</div>
-			<!-- Solution (How we're different) -->
+		</article>
+		<!-- End Solution (How we're different) -->
 
-			<!-- Divider -->
-			<hr class="my-4">
+		<!-- Divider -->
+		<hr class="my-4">
 
+		<!-- Contact -->
+		<article>
 			<!-- Contacts Section -->
 			<div id="contact" class="container space-2-bottom space-3-bottom--lg">
 				<span class="u-label u-label--sm u-label--purple mb-3">Get in touch</span>
@@ -656,7 +728,7 @@
 								<img class="max-width-6 mr-3" src="../../assets/svg/components/location-white-icon.svg" alt="Image Description">
 								<div class="media-body">
 									<h4 class="text-white-70 font-size-14 mb-0">Address</h4>
-									<span class="d-block text-white font-size-14">7250 Dallas Pkwy<br>Plano, TX 75024</span>
+									<address class="d-block text-white font-size-14">7250 Dallas Pkwy<br>Plano, TX 75024</address>
 								</div>
 							</div>
 							<!-- End Coins Name -->
@@ -723,12 +795,14 @@
 						<div class="w-md-80 w-lg-60 text-center mx-md-auto mb-9">
 							<h2 class="h1 text-white">Ready to sell your home?</h2>
 							<p class="lead text-white">Unlock new investment opportunities with Konectpal Invest</p>
-							<a class="btn btn-purple mb-2 mb-sm-0 mr-sm-2" href="#">Get Started</a>
+							<a class="btn btn-purple mb-2 mb-sm-0 mr-sm-2" href="#cta-sign-up">Get Started</a>
 						</div>
 					</div>
 				</div>
 			</div>
 			<!-- End CTA -->
+		</article>
+		<!-- End Contact -->
 	</main>
 	<!-- ========== END MAIN CONTENT ========== -->
 
@@ -742,9 +816,10 @@
 
 					<!-- List Group -->
 					<div class="list-group list-group-flush list-group-transparent">
-						<a class="list-group-item list-group-item-action" href="#we-buy-houses">Get Started</a>
+						<a class="list-group-item list-group-item-action" href="#home">We Buy Houses</a>
 						<a class="list-group-item list-group-item-action" href="#benefits">Benefits</a>
 						<a class="list-group-item list-group-item-action" href="#how-it-works">How It Works</a>
+						<a class="list-group-item list-group-item-action" href="#cta-sign-up">Get Cash Offer</a>
 					</div>
 					<!-- End List Group -->
 				</div>
@@ -820,7 +895,7 @@
 					<!-- End Logo -->
 
 					<!-- Company Description -->
-					<p class="small text-muted">Selling your home is diffucult. <br class="d-inline" /> Our process is seamless and hassle free. <br class="inline-block" /> We'll even buy your house in cash.</p>
+					<p class="small text-muted">Selling your home is diffucult. <br class="d-inline" /> Our process is seamless and hassle free. <br class="inline-block" /> We'll even buy your house in cash. 💸</p>
 					<!-- End Company Description -->
 
 					<!-- Language -->
@@ -886,6 +961,9 @@
 				</div>
 				<!-- End Site by credits -->
 
+				<!-- Divider -->
+				<hr class="my-4">
+				
 				<!-- Copyright -->
 				<div class="col-12 d-flex align-items-center flex-wrap">
 					<p class="small text-muted">&copy;2020 Konectpal Investments. | All rights reserved.</p>
@@ -934,6 +1012,7 @@
 	<script src="../../assets/js/components/hs.go-to.js"></script>
 	<script src="../../assets/js/components/hs.wizard.js"></script>
 	<script src="../../assets/js/theme-custom.js"></script>
+	<script src="../../assets/vendor/appear.js"></script>
 
 	<!-- JS Plugins Init. -->
 	<script>
@@ -989,6 +1068,10 @@
 
 			// initialization of go to
 			$.HSCore.components.HSGoTo.init('.js-go-to');
+
+			// initialization of animations
+			$.HSCore.components.HSOnScrollAnimation.init('[data-animation');
+
 		});
 	</script>
 	
