@@ -47,6 +47,7 @@
     "malihu-custom-scrollbar-plugin": "^3.1.5",
     "popper.js": "^1.14.3",
     "semistandard": "^14.2.0",
+    "terser": "^4.8.0",
     "typed.js": "^2.0.6"
   }
 }
