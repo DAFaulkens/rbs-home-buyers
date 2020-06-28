@@ -164,7 +164,7 @@ function minJS() {
       './assets/js/helpers/hs.bg-video.js',
       './assets/js/helpers/hs.focus-state.js',
 
-      './assets/js/theme-custom.js',
+      // './assets/js/theme-custom.js',
     ])
     .pipe(concat('theme.min.js'))
     .pipe(uglify())
@@ -176,26 +176,26 @@ function minJS() {
 // Image minifier - compresses images
 //
 
-function minIMG() {
-  return gulp
-    .src('./assets/img/**/*')
-    .pipe(cache(imagemin([
-      imagemin.gifsicle({interlaced: true}),
-      imagemin.mozjpeg({progressive: true}),
-      imageminJpegRecompress({
-        loops: 5,
-        min: 65,
-        max: 70,
-        quality:'medium'
-      }),
-      imagemin.svgo(),
-      imagemin.optipng({optimizationLevel: 3}),
-      pngquant({quality: [0.3, 0.5], speed: 5})
-    ],{
-      verbose: true
-    })))
-    .pipe(gulp.dest('./dist/assets/img/'));
-}
+// function minIMG() {
+//   return gulp
+//     .src('./assets/img/**/*')
+//     .pipe(cache(imagemin([
+//       imagemin.gifsicle({interlaced: true}),
+//       imagemin.mozjpeg({progressive: true}),
+//       imageminJpegRecompress({
+//         loops: 5,
+//         min: 65,
+//         max: 70,
+//         quality:'medium'
+//       }),
+//       imagemin.svgo(),
+//       imagemin.optipng({optimizationLevel: 3}),
+//       pngquant({quality: [0.3, 0.5], speed: 5})
+//     ],{
+//       verbose: true
+//     })))
+//     .pipe(gulp.dest('./dist/assets/img/'));
+// }
 
 
 
@@ -230,6 +230,6 @@ function copyVendors() {
 
 gulp.task('minCSS', minCSS);
 gulp.task('minJS', minJS);
-gulp.task('minIMG', minIMG);
+// gulp.task('minIMG', minIMG);
 gulp.task('copyVendors', copyVendors);
-gulp.task('dist', gulp.series(copyVendors, minCSS, minJS, minIMG));
+gulp.task('dist', gulp.series(copyVendors, minCSS, minJS));
