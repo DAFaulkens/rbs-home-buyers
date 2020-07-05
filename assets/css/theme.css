@@ -21199,6 +21199,10 @@ button:focus {
   File for your custom SCSS style
 ------------------------------------*/
 /* Coolors Exported Palette - coolors.co/85ffc7-091540-796eff-c9d7f8-646f79 */
+.honeypot-field {
+  display: none;
+}
+
 /*----------------------------------------------------------------------
   * Konectpal Variables - Responsive Website Template version v1.0
   * Copyright 2020 Fred Siika

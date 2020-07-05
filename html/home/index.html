@@ -285,14 +285,18 @@
 					<!-- Heading CTA -->
 					<div class="col-md-6 col-lg-5" style="margin-top: 20px;">    
 						<!-- Signup Form -->
-						<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScjQBvdEmOysGAQbalLibfXiwDgqyrBGYLrqZcrSKe9-OoKiw/formResponse" target="_self" method="POST" id="get-started" class="js-validate needs-validation">
+						<form class="gform js-validate needs-validation"
+							action="https://script.google.com/macros/s/AKfycbzQ-olTUbM0EW2wBVI3aI1keqNojy_nJd6NMMdOijz3Lmo_ff5A/exec" 
+							target="_self"
+							method="POST" 
+							id="get-started">
 							<!-- Signup -->
 							<div id="heroSignup" data-target-group="idHeroSignupForm">
 								<div class="card shadow-sm mb-4">
 									<div class="card-body p-5">
 										<h2 class="h6 text-muted font-weight-medium text-uppercase mb-3">Get started</h2>
 										
-										<!-- First Name -->
+										<!-- Full Name -->
 										<div class="js-form-message mb-3">
 											<div class="js-focus-state input-group input-group form">
 												<div class="input-group-prepend form__prepend">
@@ -300,25 +304,11 @@
 														<i class="fa fa-user form__text-inner"></i>
 													</span>
 												</div>
-												<label for="entry.1035101015"></label>
-												<input id="cta-sign-up" type="text" class="form-control form__input" name="entry.1035101015" placeholder="First Name" aria-label="First Name" required />
+												<label for="name"></label>
+												<input id="cta-sign-up" type="text" class="form-control form__input" name="name" placeholder="Full Name" aria-label="Full Name" required />
 											</div>
 										</div>
-										<!-- End First Name -->
-
-										<!-- Last Name -->
-										<div class="js-form-message mb-3">
-											<div class="js-focus-state input-group input-group form">
-												<div class="input-group-prepend form__prepend">
-													<span class="input-group-text form__text">
-														<i class="fa fa-user form__text-inner"></i>
-													</span>
-												</div>
-												<label for="entry.2119446046"></label>
-												<input type="text" class="form-control form__input" name="entry.2119446046" placeholder="Last Name" aria-label="Last Name" required />
-											</div>
-										</div>
-										<!-- End Last Name Input -->
+										<!-- End Full Name -->
 
 										<!-- Email Input -->
 										<div class="js-form-message mb-3">
@@ -328,8 +318,8 @@
 														<i class="fa fa-envelope form__text-inner"></i>
 													</span>
 												</div>
-												<label for="entry.774377731"></label>
-												<input type="email" class="form-control form__input" name="entry.774377731" placeholder="Enter your email" aria-label="Enter your email" data-msg="Please enter a valid email address." data-error-class="u-has-error" data-success-class="u-has-success" required />
+												<label for="email"></label>
+												<input id="email" type="email" class="form-control form__input" name="email" placeholder="Enter your email" aria-label="Enter your email" data-msg="Please enter a valid email address." data-error-class="u-has-error" data-success-class="u-has-success" required />
 											</div>
 										</div>
 										<!-- End Email Input -->
@@ -343,7 +333,7 @@
 													</span>
 												</div>
 												<label for="phone"></label>
-												<input id="phone" type="tel" class="form-control form__input" name="entry.1306679765" required="" placeholder="Enter mobile number" aria-label="Enter mobile number" data-msg="Please enter a valid phone number." data-error-class="u-has-error" data-success-class="u-has-success" min=1 max10 />
+												<input id="phone" type="tel" class="form-control form__input" name="phone" required placeholder="Enter mobile number" aria-label="Enter mobile number" min=10 max=10 />
 											</div>
 										</div>
 										<!-- End Phone Number Input -->
@@ -356,19 +346,27 @@
 														<i class="fas fa-comment-alt"></i>
 													</span>
 												</div>
-												<label class="h6 small d-inline-flex text-uppercase" for="formControlSelect1" name="entry.1630044437"></label>
-												<select class="form-control text-muted" id="formControlSelect1">
-													<option>How Can We help You?</option>
-													<option>Schedule a call or meeting</option>
-													<option>I need immediate assistance</option>
+												<label class="h6 small d-inline-flex text-uppercase text-muted" for="how can we help you?"></label>
+												<select id="how-can-we-help-you" class="form-control text-muted" name="how can we help you?">
+													<option selected>How Can We help You?</option>
+													<option>Sell my home ASAP</option>
+													<option>Schedule a call/virtual meeting</option>
+													<option>Schedule a home visit</option>
 													<option>Other</option>
 												</select>
 											</div>
 										</div>
 										<!-- End How Can We Help You -->
 
+										<!-- Honeypot -->
+										<fieldset class="pure-group honeypot-field">
+											<label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+											<input id="honeypot" type="text" name="honeypot" value="" />
+										</fieldset>
+										<!-- End Honeypot -->
+										
 										<!-- Form Disclaimer -->
-										<small class="form-text text-muted">By signing up, I agree to the <a href="../pages/terms.html">Terms of Service </a>and <a href="../pages/privacy.html">Privacy Policy </a>and expressly agree to receive Konectpal Invest marketing emails and texts. Message and Data Rates may apply.</small>
+										<small class="form-text text-muted">By signing up, I agree to the <a href="../pages/terms.html" target="_blank">Terms of Service </a>and <a href="../pages/privacy.html" target="_blank">Privacy Policy </a>and expressly agree to receive Konectpal Invest marketing emails and texts. Message and Data Rates may apply.</small>
 										<!-- End Form Disclaimer -->
 										
 										<!-- Form break -->
