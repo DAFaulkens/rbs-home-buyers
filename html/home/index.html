@@ -37,7 +37,7 @@
 	<link rel="canonical" href="https://konectpalinvest.com/html/home/">
 
 	<!-- Google Fonts -->
-	<link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 
 	<!-- CSS Implementing Plugins -->
 	<link rel="stylesheet" href="../../assets/vendor/font-awesome/css/all.min.css">
@@ -285,7 +285,7 @@
 					<!-- Heading CTA -->
 					<div class="col-md-6 col-lg-5" style="margin-top: 20px;">    
 						<!-- Signup Form -->
-						<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScjQBvdEmOysGAQbalLibfXiwDgqyrBGYLrqZcrSKe9-OoKiw/formResponse" target="_self" method="POST" id="get-started" class="js-validate" novalidate="">
+						<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScjQBvdEmOysGAQbalLibfXiwDgqyrBGYLrqZcrSKe9-OoKiw/formResponse" target="_self" method="POST" id="get-started" class="js-validate needs-validation">
 							<!-- Signup -->
 							<div id="heroSignup" data-target-group="idHeroSignupForm">
 								<div class="card shadow-sm mb-4">
@@ -300,7 +300,8 @@
 														<i class="fa fa-user form__text-inner"></i>
 													</span>
 												</div>
-												<input id="cta-sign-up" type="text" class="form-control form__input" name="entry.1035101015" required="" placeholder="First Name" aria-label="First Name">
+												<label for="entry.1035101015"></label>
+												<input id="cta-sign-up" type="text" class="form-control form__input" name="entry.1035101015" placeholder="First Name" aria-label="First Name" required />
 											</div>
 										</div>
 										<!-- End First Name -->
@@ -313,7 +314,8 @@
 														<i class="fa fa-user form__text-inner"></i>
 													</span>
 												</div>
-												<input type="text" class="form-control form__input" name="entry.2119446046" required="" placeholder="Last Name" aria-label="Last Name">
+												<label for="entry.2119446046"></label>
+												<input type="text" class="form-control form__input" name="entry.2119446046" placeholder="Last Name" aria-label="Last Name" required />
 											</div>
 										</div>
 										<!-- End Last Name Input -->
@@ -326,7 +328,8 @@
 														<i class="fa fa-envelope form__text-inner"></i>
 													</span>
 												</div>
-												<input type="email" class="form-control form__input" name="entry.774377731" required="" placeholder="Enter your email" aria-label="Enter your email" data-msg="Please enter a valid email address." data-error-class="u-has-error" data-success-class="u-has-success">
+												<label for="entry.774377731"></label>
+												<input type="email" class="form-control form__input" name="entry.774377731" placeholder="Enter your email" aria-label="Enter your email" data-msg="Please enter a valid email address." data-error-class="u-has-error" data-success-class="u-has-success" required />
 											</div>
 										</div>
 										<!-- End Email Input -->
@@ -339,7 +342,8 @@
 														<i class="fa fa-phone form__text-inner"></i>
 													</span>
 												</div>
-												<input type="tel" class="form-control form__input" name="entry.1306679765" required="" placeholder="Enter mobile number" aria-label="Enter mobile number" data-msg="Please enter a valid phone number." data-error-class="u-has-error" data-success-class="u-has-success" >
+												<label for="phone"></label>
+												<input id="phone" type="tel" class="form-control form__input" name="entry.1306679765" required="" placeholder="Enter mobile number" aria-label="Enter mobile number" data-msg="Please enter a valid phone number." data-error-class="u-has-error" data-success-class="u-has-success" min=1 max10 />
 											</div>
 										</div>
 										<!-- End Phone Number Input -->
@@ -840,9 +844,9 @@
 
 					<!-- List Group -->
 					<div class="list-group list-group-flush list-group-transparent">
-						<a class="list-group-item list-group-item-action" href="#cta">Contact Us</a>
-						<a class="list-group-item list-group-item-action" href="../pages/terms.html">Terms &amp; Conditions</a>
-						<a class="list-group-item list-group-item-action" href="../pages/privacy.html">Privacy &amp; Policy</a>
+						<a class="list-group-item list-group-item-action" href="https://medium.com/konectpal" target="_blank">Blog</a>
+						<a class="list-group-item list-group-item-action" href="../pages/terms.html">Terms</a>
+						<a class="list-group-item list-group-item-action" href="../pages/privacy.html">Privacy</a>
 					</div>
 					<!-- End List Group -->
 				</div>
@@ -852,22 +856,20 @@
 
 					<!-- Contact List -->
 					<div class="list-group list-group-flush list-group-transparent">
-						<a class="list-group-item list-groupd-item-action" href="tel:+1-972-503-6617">
-							<i class="fa fa-phone mb-2"></i>
-							+1 (972) 503-6617
+						<a class="list-group-item list-groupd-item-action" href="tel:+1-972-503-6617" title="972-503-6617">
+							<i class="fa fa-phone min-width-3 text-center mr-2"></i>
+							Call
 						</a>
-
 						<a class="list-group-item list-group-item-action d-inline" href="mailto:info@konectpalinvest.com?
 							bcc=fredsiika@konectpalinvest.com
 							&subject=Get%20a%20cash%20offer%20for%20your%20house
-							&body=We%20are%20buying%20houses%20in%20your%20area.%20Tell%20us%20about%20the%20house%20you%20are%20selling%20so%20we%20can%20make%20you%20an%20offer.">
+							&body=We%20are%20buying%20houses%20in%20your%20area.%20Tell%20us%20about%20the%20house%20you%20are%20selling%20so%20we%20can%20make%20you%20an%20offer." title="info@konectpalinvest.com">
 							<i class="fa fa-envelope min-width-3 text-center mr-2"></i>
-							Email Us!
+							Email
 						</a>
-
-						<a class="list-group-item list-group-item-action" href="#">
-							<i class="fa fa-user min-width-3 text-center mr-2"></i>
-							Dallas, TX
+						<a class="list-group-item list-group-item-action d-inline" href="m.me/konectpalinvest" target="_blank" title="DM us on Facebook Messenger!">
+							<i class="fab fa-facebook-messenger min-width-3 text-center mr-2"></i>
+							Messenger
 						</a>
 					</div>
 					<!-- End Contact List -->
@@ -878,22 +880,26 @@
 
 					<!-- Social -->
 					<div class="list-group list-group-flush list-group-transparent">
-						<a class="list-group-item list-group-item-action" href="https://www.facebook.com/konectpalinvest" target="_blank">
-							<i class="fab fa-facebook-f min-width-3 text-center mr-2"></i>
-							Facebook
-						</a>
-						<a class="list-group-item list-group-item-action" href="https://instagram.com/konectpal" target="_blank">
-							<i class="fab fa-instagram min-width-3 text-center mr-2"></i>
-							Instagram
-						</a>
 						<a class="list-group-item list-group-item-action" href="https://medium.com/konectpal" target="_blank">
 							<i class="fab fa-medium min-width-3 text-center mr-2"></i>
 							Medium
+						</a>
+						<a class="list-group-item list-group-item-action" href="https://twitter.com/konectpal" target="_blank">
+							<i class="fab fa-twitter min-width-3 text-center mr-2"></i>
+							Twitter
 						</a>
 						<a class="list-group-item list-group-item-action" href="https://linkedin.com/company/konectpal" target="_blank">
 							<i class="fab fa-linkedin min-width-3 text-center mr-2"></i>
 							LinkedIn
 						</a>
+						<a class="list-group-item list-group-item-action" href="https://instagram.com/konectpal" target="_blank">
+							<i class="fab fa-instagram min-width-3 text-center mr-2"></i>
+							Instagram
+						</a>
+						<a class="list-group-item list-group-item-action" href="https://www.facebook.com/konectpalinvest" target="_blank">
+							<i class="fab fa-facebook-f min-width-3 text-center mr-2"></i>
+							Facebook
+						</a>	
 					</div>
 					<!-- End Social -->
 				</div>
@@ -906,7 +912,7 @@
 					<!-- End Logo -->
 
 					<!-- Company Description -->
-					<p class="small text-muted">Selling your home is diffucult. <br class="d-inline" /> Our process is seamless and hassle free. <br class="inline-block" /> We'll even buy your house in cash. 💸</p>
+					<p class="small text-muted">Selling your home is difficult. <br class="d-inline" /> Our process is seamless and hassle-free. <br class="inline-block" /> We'll even buy your house in cash. 💸</p>
 					<!-- End Company Description -->
 
 					<!-- Language -->
@@ -1085,6 +1091,27 @@
 
 		});
 	</script>
+
+	<script>
+	// Example starter JavaScript for disabling form submissions if there are invalid fields
+	(function() {
+	  'use strict';
+	  window.addEventListener('load', function() {
+		// Fetch all the forms we want to apply custom Bootstrap validation styles to
+		var forms = document.getElementsByClassName('needs-validation');
+		// Loop over them and prevent submission
+		var validation = Array.prototype.filter.call(forms, function(form) {
+		  form.addEventListener('submit', function(event) {
+			if (form.checkValidity() === false) {
+			  event.preventDefault();
+			  event.stopPropagation();
+			}
+			form.classList.add('was-validated');
+		  }, false);
+		});
+	  }, false);
+	})();
+  	</script>
 	
 	<!-- Cookie Consent by https://www.TermsFeed.com -->
 	<script type="text/javascript" src="//www.termsfeed.com/public/cookie-consent/3.0.0/cookie-consent.js"></script>
