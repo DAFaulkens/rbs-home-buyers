@@ -21203,6 +21203,14 @@ button:focus {
   display: none;
 }
 
+.button-success {
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: #1cb841;
+  /* this is a green */
+}
+
 /*----------------------------------------------------------------------
   * Konectpal Variables - Responsive Website Template version v1.0
   * Copyright 2020 Fred Siika

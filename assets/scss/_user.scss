@@ -34,8 +34,19 @@ $darkred                   : #841e1b !default;
 // $color-palette-names: "darkgray" "titlegray" "bodygray" "lightgray" "subduedgray" "darkblue" "navblue" "lpblue" "linkblue" "teal" "green" "yella" "orange" "red" "plum" "mauve" "pink" "darkcyan" "softblue" "softgreen" "beige" "maroon" "darkred";
 // $color-palette: $darkgray $titlegray $bodygray $lightgray $subduedgray $darkblue $navblue $lpblue $linkblue $teal $green $yella $orange $red $plum $mauve $pink $darkcyan $softblue $softgreen $beige $maroon $darkred;
 
+// Form Control for Main CTA on homepage
+// =======================================================
+
 // Honepot Field for Form Control
 // To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.
 .honeypot-field {
   display: none;
+}
+
+// Button state on successful form input
+.button-success {
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: rgb(28, 184, 65); /* this is a green */
 }
