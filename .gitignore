@@ -6,3 +6,6 @@ ci_*
 co_*
 
 dist/
+templates/
+docs/
+.vscode/
